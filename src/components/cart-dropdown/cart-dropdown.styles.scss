@@ -13,9 +13,10 @@
 
   .cart-items {
     height: 240px;
-    display: flex;
+    display: block;
     flex-direction: column;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   button {
