@@ -3,17 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/cart/cart.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/cart/cart.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -46,6 +59,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -86,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584617038432</updated>
-      <workItem from="1584617039768" duration="21682000" />
+      <workItem from="1584617039768" duration="23691000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -123,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584717346286</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added addItem and removeItem functionality to checkout page">
+      <created>1584725509056</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584725509056</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,44 +186,49 @@
     <MESSAGE value="added scrollable cart-dropdown" />
     <MESSAGE value="added message when cart list is empty" />
     <MESSAGE value="added checkout page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added checkout page" />
+    <MESSAGE value="added addItem and removeItem functionality to checkout page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added addItem and removeItem functionality to checkout page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1584717346148">
+    <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584731760204">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1584717346148" />
-    <state width="1494" height="265" key="GridCell.Tab.0.bottom" timestamp="1584725474286">
+    <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584731760204" />
+    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1584725508909">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1584725474286" />
-    <state width="1494" height="265" key="GridCell.Tab.0.center" timestamp="1584725474285">
+    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1584725508909" />
+    <state width="1494" height="265" key="GridCell.Tab.0.bottom" timestamp="1584731459511">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1584725474285" />
-    <state width="1494" height="265" key="GridCell.Tab.0.left" timestamp="1584725474285">
+    <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1584731459511" />
+    <state width="1494" height="265" key="GridCell.Tab.0.center" timestamp="1584731459510">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1584725474285" />
-    <state width="1494" height="265" key="GridCell.Tab.0.right" timestamp="1584725474286">
+    <state width="1494" height="265" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1584731459510" />
+    <state width="1494" height="265" key="GridCell.Tab.0.left" timestamp="1584731459509">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1584725474286" />
+    <state width="1494" height="265" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1584731459509" />
+    <state width="1494" height="265" key="GridCell.Tab.0.right" timestamp="1584731459510">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1584731459510" />
     <state x="269" y="119" key="SettingsEditor" timestamp="1584629504316">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1584717360433">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1584725516300">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1584717360433" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1584725516300" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="145" y="206" key="new project wizard/0.0.1536.960@0.0.1536.960" timestamp="1584621500790" />
-    <state x="433" y="211" width="670" height="676" key="search.everywhere.popup" timestamp="1584643840326">
+    <state x="433" y="211" width="670" height="676" key="search.everywhere.popup" timestamp="1584729182045">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="433" y="211" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1584643840326" />
+    <state x="433" y="211" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1584729182045" />
   </component>
 </project>
