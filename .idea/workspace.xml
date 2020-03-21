@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added persistor">
+      <change afterPath="$PROJECT_DIR$/src/components/collection-overview/collection-overview.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collection-overview/collection-overview.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/directory/directory.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/directory/directory.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/user/user.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/user/user.selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +64,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/checkout-item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/collection-overview" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,16 +75,17 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/checkout" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/collection-overview" />
       <recent name="$PROJECT_DIR$/src/components/checkout-item" />
       <recent name="$PROJECT_DIR$/src/components/cart-item" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux/shop" />
+      <recent name="$PROJECT_DIR$/src/pages/checkout" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -100,7 +113,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584617038432</updated>
-      <workItem from="1584617039768" duration="23691000" />
+      <workItem from="1584617039768" duration="25094000" />
+      <workItem from="1584791292003" duration="212000" />
+      <workItem from="1584810886611" duration="4778000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -144,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584725509056</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added persistor">
+      <created>1584731824946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584731824946</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,12 +175,44 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/artemkozak/IdeaProjects/barkeep-shop/src/components/collection-overview" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -187,33 +241,42 @@
     <MESSAGE value="added message when cart list is empty" />
     <MESSAGE value="added checkout page" />
     <MESSAGE value="added addItem and removeItem functionality to checkout page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added addItem and removeItem functionality to checkout page" />
+    <MESSAGE value="added persistor" />
+    <option name="LAST_COMMIT_MESSAGE" value="added persistor" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584731760204">
+    <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584828247526">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584731760204" />
-    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1584725508909">
+    <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.960@0.0.1536.960" timestamp="1584828247526" />
+    <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584827788769">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1584725508909" />
-    <state width="1494" height="265" key="GridCell.Tab.0.bottom" timestamp="1584731459511">
+    <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
+    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1584826824169">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1584731459511" />
-    <state width="1494" height="265" key="GridCell.Tab.0.center" timestamp="1584731459510">
+    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1584826824169" />
+    <state width="1494" height="265" key="GridCell.Tab.0.bottom" timestamp="1584829553916">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1584731459510" />
-    <state width="1494" height="265" key="GridCell.Tab.0.left" timestamp="1584731459509">
+    <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1584829553916" />
+    <state width="1494" height="265" key="GridCell.Tab.0.center" timestamp="1584829553915">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1584731459509" />
-    <state width="1494" height="265" key="GridCell.Tab.0.right" timestamp="1584731459510">
+    <state width="1494" height="265" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1584829553915" />
+    <state width="1494" height="265" key="GridCell.Tab.0.left" timestamp="1584829553914">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1584731459510" />
+    <state width="1494" height="265" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1584829553914" />
+    <state width="1494" height="265" key="GridCell.Tab.0.right" timestamp="1584829553915">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state width="1494" height="265" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1584829553915" />
+    <state x="356" y="230" key="IDE.errors.dialog" timestamp="1584732368558">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state x="356" y="230" key="IDE.errors.dialog/0.0.1536.960@0.0.1536.960" timestamp="1584732368558" />
     <state x="269" y="119" key="SettingsEditor" timestamp="1584629504316">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
