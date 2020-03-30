@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/with-spinner/with-spinner.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/with-spinner/with-spinner.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/shop/shop.types.js" afterDir="false" />
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added loading spinner and moved shop data to firestore">
+      <change afterPath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.container.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/collection/collection.container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/collections-overview/collections-overview.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/menu-item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -70,17 +70,17 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/redux/shop" />
-      <recent name="$PROJECT_DIR$/src/pages/checkout" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/menu-item" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/firebase" />
-      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux/shop" />
+      <recent name="$PROJECT_DIR$/src/pages/checkout" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -114,7 +114,8 @@
       <workItem from="1584906493567" duration="3465000" />
       <workItem from="1585092466414" duration="886000" />
       <workItem from="1585095253275" duration="2946000" />
-      <workItem from="1585100078772" duration="13219000" />
+      <workItem from="1585100078772" duration="17932000" />
+      <workItem from="1585505322702" duration="2579000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585155032627</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added loading spinner and moved shop data to firestore">
+      <created>1585488941120</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585488941120</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +281,8 @@
     <MESSAGE value="added respective selectors and updating corresponding components" />
     <MESSAGE value="added stripe integration" />
     <MESSAGE value="synchronized with Yihua repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="synchronized with Yihua repo" />
+    <MESSAGE value="added loading spinner and moved shop data to firestore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added loading spinner and moved shop data to firestore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584828247526">
@@ -284,29 +293,29 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1585155032105">
+    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1585490088023">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1585155032105" />
-    <state width="1494" height="264" key="GridCell.Tab.0.bottom" timestamp="1585483900124">
+    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1585490088023" />
+    <state width="1494" height="264" key="GridCell.Tab.0.bottom" timestamp="1585521943541">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="264" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1585483900124" />
+    <state width="1494" height="264" key="GridCell.Tab.0.bottom/0.0.1536.960@0.0.1536.960" timestamp="1585521943541" />
     <state width="1494" height="265" key="GridCell.Tab.0.bottom/0.23.1536.870@0.23.1536.870" timestamp="1585093829893" />
-    <state width="1494" height="264" key="GridCell.Tab.0.center" timestamp="1585483900123">
+    <state width="1494" height="264" key="GridCell.Tab.0.center" timestamp="1585521943540">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="264" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1585483900123" />
+    <state width="1494" height="264" key="GridCell.Tab.0.center/0.0.1536.960@0.0.1536.960" timestamp="1585521943540" />
     <state width="1494" height="265" key="GridCell.Tab.0.center/0.23.1536.870@0.23.1536.870" timestamp="1585093829892" />
-    <state width="1494" height="264" key="GridCell.Tab.0.left" timestamp="1585483900122">
+    <state width="1494" height="264" key="GridCell.Tab.0.left" timestamp="1585521943539">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="264" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1585483900122" />
+    <state width="1494" height="264" key="GridCell.Tab.0.left/0.0.1536.960@0.0.1536.960" timestamp="1585521943539" />
     <state width="1494" height="265" key="GridCell.Tab.0.left/0.23.1536.870@0.23.1536.870" timestamp="1585093829892" />
-    <state width="1494" height="264" key="GridCell.Tab.0.right" timestamp="1585483900123">
+    <state width="1494" height="264" key="GridCell.Tab.0.right" timestamp="1585521943541">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1494" height="264" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1585483900123" />
+    <state width="1494" height="264" key="GridCell.Tab.0.right/0.0.1536.960@0.0.1536.960" timestamp="1585521943541" />
     <state width="1494" height="265" key="GridCell.Tab.0.right/0.23.1536.870@0.23.1536.870" timestamp="1585093829893" />
     <state x="356" y="230" key="IDE.errors.dialog" timestamp="1584834387853">
       <screen x="0" y="0" width="1536" height="960" />
@@ -316,17 +325,17 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1584838847716">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1585488951970">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1584838847716" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1585488951970" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="145" y="206" key="new project wizard/0.0.1536.960@0.0.1536.960" timestamp="1584621500790" />
-    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1585427279874">
+    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1585502808751">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1585427279874" />
+    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1585502808751" />
   </component>
 </project>
