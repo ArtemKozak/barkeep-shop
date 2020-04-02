@@ -1,36 +1,54 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      title: 'wineCorks',
+      imageUrl: 'https://i.ibb.co/sQRbSxr/wineCork.jpg',
       id: 1,
       linkUrl: 'shop/hats'
     },
     {
-      title: 'jackets',
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+      title: 'jiggers',
+      imageUrl: 'https://i.ibb.co/6H0MYKm/jigger.jpg',
       id: 2,
-      linkUrl: 'shop/jackets'
+      linkUrl: 'shop/hats'
     },
     {
-      title: 'sneakers',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      title: 'shakers',
+      imageUrl: 'https://i.ibb.co/kG3XcQS/shaker.jpg',
       id: 3,
-      linkUrl: 'shop/sneakers'
+      linkUrl: 'shop/hats'
     },
     {
-      title: 'womens',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      size: 'large',
+      title: 'shakersBostonsky',
+      imageUrl: 'https://i.ibb.co/xfYQ5bb/shaker-Bostonsky.jpg',
       id: 4,
-      linkUrl: 'shop/womens'
+      linkUrl: 'shop/hats'
     },
     {
-      title: 'mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      size: 'large',
+      title: 'strainers',
+      imageUrl: 'https://i.ibb.co/605XVJ7/strainer.jpg',
       id: 5,
-      linkUrl: 'shop/mens'
+      linkUrl: 'shop/hats'
+    },
+    {
+      title: 'barSpoons',
+      imageUrl: 'https://i.ibb.co/fdfh9nP/baeSpoon.jpg',
+      id: 6,
+      linkUrl: 'shop/hats'
+    },
+    {
+      title: 'geysers',
+      imageUrl: 'https://i.ibb.co/wzFcVV5/geyser.jpg',
+      size: 'large',
+      id: 7,
+      linkUrl: 'shop/hats'
+    },
+    {
+      title: 'madlers',
+      imageUrl: 'https://i.ibb.co/3pXHmqq/madler.jpg',
+      size: 'large',
+      id: 8,
+      linkUrl: 'shop/hats'
     }
   ]
 };
