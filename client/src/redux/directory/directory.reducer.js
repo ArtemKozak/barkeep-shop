@@ -1,55 +1,36 @@
 const INITIAL_STATE = {
     sections: [
-        // {
-        //   title: 'wineCorks',
-        //   imageUrl: 'https://i.ibb.co/sQRbSxr/wineCork.jpg',
-        //   id: 1,
-        //   linkUrl: 'shop/hats'
-        // },
         {
-            title: 'jiggers',
-            imageUrl: 'https://i.ibb.co/6H0MYKm/jigger.jpg',
+            title: 'hats',
+            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+            id: 1,
+            linkUrl: 'shop/hats'
+        },
+        {
+            title: 'jackets',
+            imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
             id: 2,
-            linkUrl: 'shop/jiggers'
+            linkUrl: 'shop/jackets'
         },
-        // {
-        //   title: 'shakers',
-        //   imageUrl: 'https://i.ibb.co/kG3XcQS/shaker.jpg',
-        //   id: 3,
-        //   linkUrl: 'shop/hats'
-        // },
         {
-            title: 'geysers',
-            imageUrl: 'https://i.ibb.co/wzFcVV5/geyser.jpg',
+            title: 'sneakers',
+            imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+            id: 3,
+            linkUrl: 'shop/sneakers'
+        },
+        {
+            title: 'womens',
+            imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+            size: 'large',
             id: 4,
-            linkUrl: 'shop/geysers'
+            linkUrl: 'shop/womens'
         },
         {
-            title: 'strainers',
-            imageUrl: 'https://i.ibb.co/605XVJ7/strainer.jpg',
+            title: 'mens',
+            imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+            size: 'large',
             id: 5,
-            linkUrl: 'shop/strainers'
-        },
-        {
-            title: 'barSpoons',
-            imageUrl: 'https://i.ibb.co/fdfh9nP/baeSpoon.jpg',
-            size: 'large',
-            id: 6,
-            linkUrl: 'shop/barspoons'
-        },
-        {
-            title: 'shakersBostonsky',
-            imageUrl: 'https://i.ibb.co/xfYQ5bb/shaker-Bostonsky.jpg',
-            id: 7,
-            size: 'large',
-            linkUrl: 'shop/shakersbostonsky'
-        },
-        {
-            title: 'madlers',
-            imageUrl: 'https://i.ibb.co/3pXHmqq/madler.jpg',
-            size: 'large',
-            id: 8,
-            linkUrl: 'shop/madlers'
+            linkUrl: 'shop/mens'
         }
     ]
 };

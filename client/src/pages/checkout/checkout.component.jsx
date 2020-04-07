@@ -5,14 +5,11 @@ import {createStructuredSelector} from 'reselect';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 
-import {
-    selectCartItems,
-    selectCartTotal
-} from '../../redux/cart/cart.selectors';
+import {selectCartItems, selectCartTotal} from '../../redux/cart/cart.selectors';
 
 import {
-    CheckoutPageContainer,
     CheckoutHeaderContainer,
+    CheckoutPageContainer,
     HeaderBlockContainer,
     TotalContainer,
     WarningContainer
