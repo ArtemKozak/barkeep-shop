@@ -16,7 +16,7 @@ const StripeCheckoutButton = ({price}) => {
             }
         })
             .then(response => {
-                alert('succesful payment');
+                alert('Successful payment');
             })
             .catch(error => {
                 console.log('Payment Error: ', error);
@@ -29,7 +29,7 @@ const StripeCheckoutButton = ({price}) => {
     return (
         <StripeCheckout
             label='Pay Now'
-            name='CRWN Clothing Ltd.'
+            name='Barkeep Shop.'
             billingAddress
             shippingAddress
             image='https://svgshare.com/i/CUz.svg'
