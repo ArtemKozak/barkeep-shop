@@ -9,7 +9,10 @@ import {emailSignInStart, googleSignInStart} from '../../redux/user/user.actions
 import {ButtonsBarContainer, SignInContainer, SignInTitle} from './sign-in.styles';
 
 const SignIn = ({emailSignInStart, googleSignInStart}) => {
-    const [userCredentials, setCredentials] = useState({email: '', password: ''});
+    const [userCredentials, setCredentials] = useState({
+        email: '',
+        password: ''
+    });
 
     const {email, password} = userCredentials;
 

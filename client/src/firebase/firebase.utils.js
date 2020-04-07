@@ -3,14 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyDZV38RO1Led2MAt7cl7Yi0yJQIT1pxAmA",
-    authDomain: "barkeep-shop.firebaseapp.com",
-    databaseURL: "https://barkeep-shop.firebaseio.com",
-    projectId: "barkeep-shop",
-    storageBucket: "barkeep-shop.appspot.com",
-    messagingSenderId: "351259110076",
-    appId: "1:351259110076:web:0102838b70d4bac549feb9",
-    measurementId: "G-X5MLSJ6SJS"
+    apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
+    authDomain: 'crwn-db.firebaseapp.com',
+    databaseURL: 'https://crwn-db.firebaseio.com',
+    projectId: 'crwn-db',
+    storageBucket: 'crwn-db.appspot.com',
+    messagingSenderId: '850995411664',
+    appId: '1:850995411664:web:7ddc01d597846f65'
 };
 
 firebase.initializeApp(config);
