@@ -112,7 +112,7 @@
       <workItem from="1585505322702" duration="16611000" />
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
-      <workItem from="1586256802184" duration="430000" />
+      <workItem from="1586256802184" duration="1644000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586256557374</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Stripe connecting">
+      <created>1586257568128</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586257568128</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,10 +345,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1586256556989">
+    <state x="358" y="102" key="CommitChangelistDialog2" timestamp="1586257567908">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586256556989" />
+    <state x="358" y="102" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586257567908" />
     <state width="1494" height="264" key="GridCell.Tab.0.bottom" timestamp="1586256787987">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
@@ -370,10 +377,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586256569139">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586257577422">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586256569139" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586257577422" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
