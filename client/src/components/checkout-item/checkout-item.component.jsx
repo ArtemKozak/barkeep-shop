@@ -6,28 +6,39 @@ import {addItem, clearItemFromCart, removeItem} from '../../redux/cart/cart.acti
 import {
     CheckoutItemContainer,
     ImageContainer,
+    PriceContainer,
     QuantityContainer,
     RemoveButtonContainer,
-    TextContainer
+    TextContainer,
+    TotalPriceContainer,
+    TopLevelContainer,
+    BottomLevelContainer
 } from './checkout-item.styles';
 
 const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
     const {name, imageUrl, price, quantity} = cartItem;
     return (
         <CheckoutItemContainer>
-            <ImageContainer>
-                <img src={imageUrl} alt='item'/>
-            </ImageContainer>
-            <TextContainer>{name}</TextContainer>
-            <QuantityContainer>
-                <div onClick={() => removeItem(cartItem)}>&#10094;</div>
-                <span>{quantity}</span>
-                <div onClick={() => addItem(cartItem)}>&#10095;</div>
-            </QuantityContainer>
-            <TextContainer>{price}</TextContainer>
-            <RemoveButtonContainer onClick={() => clearItem(cartItem)}>
-                &#10005;
-            </RemoveButtonContainer>
+            <TopLevelContainer >
+                <ImageContainer>
+                    <img src={imageUrl} alt='item'/>
+                </ImageContainer>
+                <TextContainer>{name}</TextContainer>
+                <RemoveButtonContainer onClick={() => clearItem(cartItem)}>
+                    &#10005;
+                </RemoveButtonContainer>
+            </TopLevelContainer>
+            <BottomLevelContainer >
+                <PriceContainer>{price}</PriceContainer>
+                <QuantityContainer>
+                    <div>
+                        <div onClick={() => removeItem(cartItem)}>&#10094;</div>
+                        <span>{quantity}</span>
+                        <div onClick={() => addItem(cartItem)}>&#10095;</div>
+                    </div>
+                </QuantityContainer>
+                <TotalPriceContainer>{price * quantity}</TotalPriceContainer>
+            </BottomLevelContainer>
         </CheckoutItemContainer>
     );
 };
