@@ -38,15 +38,15 @@ const SignUp = ({signUpStart}) => {
 
     return (
         <SignUpContainer>
-            <SignUpTitle>I do not have a account</SignUpTitle>
-            <span>Sign up with your email and password</span>
+            <SignUpTitle>Регистрация</SignUpTitle>
+            <span>Присойденитесь используя почту и пароль</span>
             <form className='sign-up-form' onSubmit={handleSubmit}>
                 <FormInput
                     type='text'
                     name='displayName'
                     value={displayName}
                     onChange={handleChange}
-                    label='Display Name'
+                    label='Ваше имя'
                     required
                 />
                 <FormInput
@@ -54,7 +54,7 @@ const SignUp = ({signUpStart}) => {
                     name='email'
                     value={email}
                     onChange={handleChange}
-                    label='Email'
+                    label='Эл. почта'
                     required
                 />
                 <FormInput
@@ -62,7 +62,7 @@ const SignUp = ({signUpStart}) => {
                     name='password'
                     value={password}
                     onChange={handleChange}
-                    label='Password'
+                    label='Придумайте пароль'
                     required
                 />
                 <FormInput
@@ -70,10 +70,10 @@ const SignUp = ({signUpStart}) => {
                     name='confirmPassword'
                     value={confirmPassword}
                     onChange={handleChange}
-                    label='Confirm Password'
+                    label='Подтвердите пароль'
                     required
                 />
-                <CustomButton type='submit'>SIGN UP</CustomButton>
+                <CustomButton type='submit'>зарегистрироваться</CustomButton>
             </form>
         </SignUpContainer>
     );
