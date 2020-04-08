@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const CollectionPageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+    @media screen and (max-width: 1000px) {
+      align-items: center;
+    }
 `;
 
 export const CollectionTitle = styled.h2`
@@ -14,15 +19,14 @@ export const CollectionItemsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
-
+    
   & > div {
-    margin-bottom: 30px;
+    margin: 0 10px 30px 10px;
   }
-  
-  @media screen and (max-width: 800px) {
+
+  @media screen and (max-width: 1000px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 10px;
   }
-
 `;

@@ -7,13 +7,9 @@
       <change beforePath="$PROJECT_DIR$/client/src/components/checkout-item/checkout-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-item/checkout-item.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/collection-preview/collection-preview.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-preview/collection-preview.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sign-in/sign-in.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sign-in/sign-in.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sign-up/sign-up.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sign-up/sign-up.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/global.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/global.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/collection/collection.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/collection/collection.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,7 @@
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
       <workItem from="1586256802184" duration="11418000" />
-      <workItem from="1586272283052" duration="17086000" />
+      <workItem from="1586272283052" duration="21332000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -363,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586298267824</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="mobile view improved">
+      <created>1586308859733</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1586308859733</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +459,8 @@
     <MESSAGE value="fixing server dev" />
     <MESSAGE value="working server deployed to heroku" />
     <MESSAGE value="added mobile view styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mobile view styles" />
+    <MESSAGE value="mobile view improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile view improved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -471,10 +475,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586298267616">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586308859492">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586298267616" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586308859492" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

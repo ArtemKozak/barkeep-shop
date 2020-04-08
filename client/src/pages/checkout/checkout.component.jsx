@@ -13,13 +13,13 @@ import {
 import {
     CheckoutPageContainer,
     CheckoutHeaderContainer,
-    HeaderBlockContainer,
     TotalContainer,
     WarningContainer
 } from './checkout.styles';
 
 const CheckoutPage = ({cartItems, total}) => (
     <CheckoutPageContainer>
+        <CheckoutHeaderContainer/>
         {cartItems.map(cartItem => (
             <CheckoutItem key={cartItem.id} cartItem={cartItem}/>
         ))}

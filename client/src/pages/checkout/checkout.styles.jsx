@@ -21,15 +21,8 @@ export const CheckoutPageContainer = styled.div`
 
 export const CheckoutHeaderContainer = styled.div`
   width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
+  height: 1px;
   border-bottom: 1px solid darkgrey;
-`;
-
-export const HeaderBlockContainer = styled.div`
-  text-transform: capitalize;
-  width: 23%;
 `;
 
 export const TotalContainer = styled.div`

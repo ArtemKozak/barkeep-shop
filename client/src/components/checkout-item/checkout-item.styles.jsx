@@ -38,9 +38,16 @@ export const TextContainer = styled.span`
 `;
 
 export const RemoveButtonContainer = styled.div`
-  padding-left: 12px;
   cursor: pointer;
   width: 10%;
+`;
+
+export const ButtonContainer = styled.div`
+  cursor: pointer;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 `;
 
 export const PriceContainer = styled.span`
@@ -59,6 +66,13 @@ export const QuantityContainer = styled(TextContainer)`
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    
+    button {
+      margin: 0;
+      background-color: white;
+      color: black;
+      border: 1px solid #e7e7e7; /* Grey */
+    }
   }
 }
 `;

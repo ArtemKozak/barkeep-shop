@@ -12,7 +12,8 @@ import {
     TextContainer,
     TotalPriceContainer,
     TopLevelContainer,
-    BottomLevelContainer
+    BottomLevelContainer,
+    ButtonContainer
 } from './checkout-item.styles';
 
 const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
@@ -24,17 +25,19 @@ const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
                     <img src={imageUrl} alt='item'/>
                 </ImageContainer>
                 <TextContainer>{name}</TextContainer>
-                <RemoveButtonContainer onClick={() => clearItem(cartItem)}>
-                    &#10005;
+                <RemoveButtonContainer>
+                    <ButtonContainer onClick={() => clearItem(cartItem)}>
+                        &#10005;
+                    </ButtonContainer>
                 </RemoveButtonContainer>
             </TopLevelContainer>
             <BottomLevelContainer >
                 <PriceContainer>{price}</PriceContainer>
                 <QuantityContainer>
                     <div>
-                        <div onClick={() => removeItem(cartItem)}>&#10094;</div>
+                        <button onClick={() => removeItem(cartItem)}>&#10094;</button>
                         <span>{quantity}</span>
-                        <div onClick={() => addItem(cartItem)}>&#10095;</div>
+                        <button onClick={() => addItem(cartItem)}>&#10095;</button>
                     </div>
                 </QuantityContainer>
                 <TotalPriceContainer>{price * quantity}</TotalPriceContainer>
