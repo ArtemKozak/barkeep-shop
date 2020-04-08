@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/terms-of-use/terms-of-use.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/terms-of-use/terms-of-use.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/terms-of-use/terms.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sign-in/sign-in.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sign-in/sign-in.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sign-up/sign-up.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sign-up/sign-up.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sign-up/sign-up.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sign-up/sign-up.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
       <workItem from="1586256802184" duration="11418000" />
-      <workItem from="1586272283052" duration="32006000" />
+      <workItem from="1586272283052" duration="33130000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -384,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586359146018</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added terms of use">
+      <created>1586362511448</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1586362511448</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added scrollable cart-dropdown" />
     <MESSAGE value="added message when cart list is empty" />
     <MESSAGE value="added checkout page" />
     <MESSAGE value="added addItem and removeItem functionality to checkout page" />
@@ -480,7 +486,8 @@
     <MESSAGE value="added mobile view for collections and checkout" />
     <MESSAGE value="added mobile view for cart dropdown" />
     <MESSAGE value="added facebook login button" />
-    <option name="LAST_COMMIT_MESSAGE" value="added facebook login button" />
+    <MESSAGE value="added terms of use" />
+    <option name="LAST_COMMIT_MESSAGE" value="added terms of use" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -495,10 +502,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586359145777">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586362511243">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586359145777" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586362511243" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

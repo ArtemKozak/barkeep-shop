@@ -13,7 +13,7 @@ export const SignInContainer = styled.div`
 
 export const OrLineContainer = styled.div`
   margin: 35px 0 35px 0;
-  width: 380px;
+  width: 100%;
   display: flex;
   flex-direction: line;
   
@@ -33,7 +33,6 @@ export const SingInAsContainer = styled.div`
   
   @media screen and (max-width: 800px) {
     width: 100%;
-    margin-bottom: 80px;
   }
 `;
 

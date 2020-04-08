@@ -6,7 +6,7 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import {signUpStart} from '../../redux/user/user.actions';
 
-import {SignUpContainer, SignUpTitle} from './sign-up.styles';
+import {SignUpContainer, SignUpTitle, SubDescriptionContainer, TermsLink} from './sign-up.styles';
 
 const SignUp = ({signUpStart}) => {
     const [userCredentials, setUserCredentials] = useState({
@@ -73,6 +73,9 @@ const SignUp = ({signUpStart}) => {
                     label='Подтвердите пароль'
                     required
                 />
+                <SubDescriptionContainer>Регистрируясь, вы соглашаетесь с
+                    <TermsLink to='/terms'> пользовательским соглашением</TermsLink>
+                </SubDescriptionContainer>
                 <CustomButton type='submit'>зарегистрироваться</CustomButton>
             </form>
         </SignUpContainer>
