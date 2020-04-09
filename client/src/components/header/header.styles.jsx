@@ -27,18 +27,67 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  
+`;
+
+export const OptionsTextContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
   @media screen and (max-width: 800px) {
-    width: 80%;
+    display: none;
   }
 `;
 
 export const OptionLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
+`;
+
+export const CurrentUserContainer = styled.div`
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+`;
+
+export const SubMenuContainer = styled.ul`
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+`;
+
+
+
+export const MenubarItemDropdown = styled(Link)`
+  color: black;
+  padding: 16px 24px;
+  text-decoration: none;
+  display: block;
+  
+  &:hover {
+    background-color: #f1f1f1;
+  }
+`;
+
+export const MenuItemContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  
+  &:hover ${SubMenuContainer} {
+    display: block;
+  }
 `;

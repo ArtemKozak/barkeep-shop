@@ -9,7 +9,17 @@ import {signOutStart} from '../../redux/user/user.actions';
 
 import {ReactComponent as Logo} from '../../assets/crown.svg';
 
-import {HeaderContainer, LogoContainer, OptionLink, OptionsContainer} from './header.styles';
+import {
+    CurrentUserContainer,
+    SubMenuContainer,
+    HeaderContainer,
+    LogoContainer,
+    OptionLink,
+    OptionsContainer,
+    OptionsTextContainer,
+    MenuItemContainer,
+    MenubarItemDropdown
+} from './header.styles';
 
 const Header = ({currentUser, hidden, signOutStart}) => (
     <HeaderContainer>
@@ -17,15 +27,24 @@ const Header = ({currentUser, hidden, signOutStart}) => (
             <Logo className='logo'/>
         </LogoContainer>
         <OptionsContainer>
-            <OptionLink to='/shop'>SHOP</OptionLink>
-            <OptionLink to='/shop'>CONTACT</OptionLink>
-            {currentUser ? (
-                <OptionLink as='div' onClick={signOutStart}>
-                    SIGN OUT
-                </OptionLink>
-            ) : (
-                <OptionLink to='/signin'>SIGN IN</OptionLink>
-            )}
+            <OptionsTextContainer>
+                <OptionLink to='/shop'>Магазин</OptionLink>
+                <OptionLink to='/shop'>О нас</OptionLink>
+                {currentUser ? (
+                    <MenuItemContainer>
+                        <CurrentUserContainer>
+                            Здравствуйте, {currentUser.displayName}
+                        </CurrentUserContainer>
+                        <SubMenuContainer>
+                            <MenubarItemDropdown to='/profile/personal-information/'>Личные данные</MenubarItemDropdown>
+                            <MenubarItemDropdown to='/checkout'>Корзина</MenubarItemDropdown>
+                            <MenubarItemDropdown as='div' onClick={signOutStart}>Выйти</MenubarItemDropdown>
+                        </SubMenuContainer>
+                    </MenuItemContainer>
+                ) : (
+                    <OptionLink to='/signin'>Войдите в личный кабинет</OptionLink>
+                )}
+            </OptionsTextContainer>
             <CartIcon/>
         </OptionsContainer>
         {hidden ? null : <CartDropdown/>}

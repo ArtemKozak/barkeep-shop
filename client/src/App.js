@@ -10,6 +10,7 @@ import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import TermOfUsePage from "./pages/terms-of-use/terms-of-use.component";
+import ProfilePage from "./pages/profile/profile.component";
 
 import Header from './components/header/header.component';
 
@@ -35,6 +36,7 @@ class App extends React.Component {
                 <Header/>
                 <Switch>
                     <Route exact path='/' component={HomePage}/>
+                    <Route path='/profile' component={ProfilePage}/>
                     <Route path='/shop' component={ShopPage}/>
                     <Route exact path='/checkout' component={CheckoutPage}/>
                     <Route exact path='/terms' component={TermOfUsePage}/>

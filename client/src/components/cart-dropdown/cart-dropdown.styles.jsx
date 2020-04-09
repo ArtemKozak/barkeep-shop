@@ -49,15 +49,13 @@ export const EmptyMessageContainer = styled.span`
 `;
 
 export const CloseCardTextContainer = styled.span`
-  visibility: hidden;
-  height: 0;
+  display: none;
   font-size: 14px;
   margin-left: auto;
   
   
   @media screen and (max-width: 800px) {
-    visibility: visible;
-    height: unset;
+    display: unset;
     cursor: pointer;
     margin-bottom: 10px;
   }
