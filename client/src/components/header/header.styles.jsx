@@ -78,6 +78,7 @@ export const MenubarItemDropdown = styled(Link)`
   padding: 16px 24px;
   text-decoration: none;
   display: block;
+  cursor: pointer; 
   
   &:first-child {
     border-radius: 5px 5px 0 0;

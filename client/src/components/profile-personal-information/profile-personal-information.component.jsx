@@ -28,15 +28,15 @@ const PersonalInformation = ({currentUser}) => (
         <UserDataContainer>
             <LabelContainer>Телефоны</LabelContainer>
             <FlexTextsContainer>
-                <TextContainer>{formatPhoneNumberIntl("+380990037123")}</TextContainer>
-                <TextContainer>{formatPhoneNumberIntl("+380990037123")}</TextContainer>
+                <TextContainer>{formatPhoneNumberIntl("+380990123456")}</TextContainer>
+                <TextContainer>{formatPhoneNumberIntl("+380997891011")}</TextContainer>
             </FlexTextsContainer>
         </UserDataContainer>
         <UserDataContainer>
             <LabelContainer>Адреса для доставок</LabelContainer>
             <FlexTextsContainer>
-                <TextContainer>Киев, МИЛОСЛАВСКАЯ УЛ., д.16 кв.282</TextContainer>
-                <TextContainer>Киев, ЛИСКОВСКАЯ УЛ., д.32/51 кв.95</TextContainer>
+                <TextContainer>Киев, НАЗВАНИЕ1 УЛ., д.4 кв.52</TextContainer>
+                <TextContainer>Киев, НАЗВАНИЕ2 УЛ., д.2/5 кв.45</TextContainer>
             </FlexTextsContainer>
         </UserDataContainer>
     </PersonalInformationContainer>
