@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/menu-personal-information/menu-personal-information.component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/menu-personal-information/menu-personal-information.styles.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/with-spinner/with-spinner.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/with-spinner/with-spinner.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +117,7 @@
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
       <workItem from="1586256802184" duration="11418000" />
-      <workItem from="1586272283052" duration="60777000" />
+      <workItem from="1586272283052" duration="68120000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -419,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586397023508</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added labels at the personal cabinet">
+      <created>1586436152988</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1586436152988</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added persistor" />
     <MESSAGE value="added collection overview component" />
     <MESSAGE value="added respective selectors and updating corresponding components" />
     <MESSAGE value="added stripe integration" />
@@ -515,7 +515,8 @@
     <MESSAGE value="added terms of use before registration" />
     <MESSAGE value="added dropdown menu" />
     <MESSAGE value="added personal cabinet vertical menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added personal cabinet vertical menu" />
+    <MESSAGE value="added labels at the personal cabinet" />
+    <option name="LAST_COMMIT_MESSAGE" value="added labels at the personal cabinet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -530,10 +531,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586397023295">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586436152688">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586397023295" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586436152688" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -562,6 +563,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="356" y="230" key="IDE.errors.dialog/0.0.1536.960@0.0.1536.960" timestamp="1584834387853" />
+    <state x="540" y="198" key="RollbackChangesDialog" timestamp="1586442875785">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state x="540" y="198" key="RollbackChangesDialog/0.0.1536.960@0.0.1536.960" timestamp="1586442875785" />
     <state x="269" y="119" key="SettingsEditor" timestamp="1584629504316">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

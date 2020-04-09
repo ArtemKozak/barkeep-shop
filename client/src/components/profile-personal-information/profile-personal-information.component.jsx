@@ -10,19 +10,19 @@ import {
     UserDataContainer
 } from './profile-personal-information.styles';
 
-const PersonalInformation = () => (
+const PersonalInformation = ({currentUser}) => (
     <PersonalInformationContainer>
         <TitleContainer>Личные данные</TitleContainer>
         <UserDataContainer>
             <LabelContainer>Имя</LabelContainer>
             <FlexTextsContainer>
-                <TextContainer>Артем Козак</TextContainer>
+                <TextContainer>{currentUser.displayName}</TextContainer>
             </FlexTextsContainer>
         </UserDataContainer>
         <UserDataContainer>
             <LabelContainer>Электронная потча</LabelContainer>
             <FlexTextsContainer>
-                <TextContainer>artem.kozak3007@gmail.com</TextContainer>
+                <TextContainer>{currentUser.email}</TextContainer>
             </FlexTextsContainer>
         </UserDataContainer>
         <UserDataContainer>
