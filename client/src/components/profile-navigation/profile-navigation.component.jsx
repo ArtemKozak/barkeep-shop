@@ -9,13 +9,13 @@ const ProfileNavigation = ({toggleCartHidden}) => (
         <NavigationProfileLink to='/profile/personal-information/'>Главная</NavigationProfileLink>
         <NavigationProfileLink to='/profile/personal-information/'>Бонусные баллы</NavigationProfileLink>
         <NavigationProfileLink as='div' onClick={toggleCartHidden}>Корзина</NavigationProfileLink>
-        <NavigationProfileLink to='/profile/personal-information/'>Текущий заказы</NavigationProfileLink>
+        <NavigationProfileLink to='/profile/personal-information/'>Текущие заказы</NavigationProfileLink>
         <NavigationProfileLink to='/profile/personal-information/'>История заказов</NavigationProfileLink>
     </NavigationContainer>
 );
 
 const mapDispatchToProps = dispatch => ({
-        toggleCartHidden: () => dispatch(toggleCartHidden())
+    toggleCartHidden: () => dispatch(toggleCartHidden())
 });
 
 export default connect(

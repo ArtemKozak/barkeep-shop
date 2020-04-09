@@ -60,6 +60,7 @@ export const CurrentUserContainer = styled.div`
 
 export const SubMenuContainer = styled.ul`
   display: none;
+  border-radius: 5px;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -77,6 +78,14 @@ export const MenubarItemDropdown = styled(Link)`
   padding: 16px 24px;
   text-decoration: none;
   display: block;
+  
+  &:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  &:last-child {
+    border-radius: 0 0 5px 5px;
+  }
   
   &:hover {
     background-color: #f1f1f1;
