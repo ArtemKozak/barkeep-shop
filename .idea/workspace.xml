@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.container.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.sagas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +122,7 @@
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
       <workItem from="1586256802184" duration="11418000" />
-      <workItem from="1586272283052" duration="69271000" />
+      <workItem from="1586272283052" duration="71845000" />
     </task>
     <task id="LOCAL-00001" summary="first setting up and firebase connecting">
       <created>1584629455053</created>
@@ -427,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586444773479</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="small view fixing">
+      <created>1586445899545</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1586445899545</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +510,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added respective selectors and updating corresponding components" />
     <MESSAGE value="added stripe integration" />
     <MESSAGE value="synchronized with Yihua repo" />
     <MESSAGE value="added loading spinner and moved shop data to firestore" />
@@ -523,7 +534,8 @@
     <MESSAGE value="added personal cabinet vertical menu" />
     <MESSAGE value="added labels at the personal cabinet" />
     <MESSAGE value="added with spinner to the personal cabinet" />
-    <option name="LAST_COMMIT_MESSAGE" value="added with spinner to the personal cabinet" />
+    <MESSAGE value="small view fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="small view fixing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -538,10 +550,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586444773277">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586445899333">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586444773277" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586445899333" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
