@@ -11,7 +11,7 @@ export const HorizontalLine = styled.div`
   border-left: 1px solid lightgrey;
 `;
 
-export const PersonalInformationContainer = styled.div`
+export const ProfileDataContainer = styled.div`
   width: 700px;
   
   &:first-child {width: 700 px;}

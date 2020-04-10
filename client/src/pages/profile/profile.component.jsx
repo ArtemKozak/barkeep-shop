@@ -4,9 +4,9 @@ import {Route, Switch} from "react-router-dom";
 import ProfileNavigation from "../../components/profile-navigation/profile-navigation.component";
 import PersonalInformationContainerPage
     from "../../components/profile-personal-information/profile-personal-information.container";
+import LoyaltyContainerPage from "../../components/profile-loyalty/profile-loyalty.container";
 
 import {HorizontalLine, ProfilePageContainer} from './profile.styles';
-import Loyalty from "../../components/profile-loyalty/profile-loyalty.component";
 
 
 const ProfilePage = () => (
@@ -15,7 +15,7 @@ const ProfilePage = () => (
         <HorizontalLine/>
         <Switch>
             <Route exact path='/profile/personal-information/' component={PersonalInformationContainerPage}/>
-            <Route path='/profile/loyalty' component={Loyalty}/>
+            <Route path='/profile/loyalty' component={LoyaltyContainerPage}/>
         </Switch>
         <HorizontalLine/>
     </ProfilePageContainer>

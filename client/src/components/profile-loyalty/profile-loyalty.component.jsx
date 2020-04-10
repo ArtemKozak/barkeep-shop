@@ -1,23 +1,16 @@
 import React from "react";
 
+import UserData from "../user-data-container/user-data-container.component";
+
 import {
     PersonalInformationContainer,
-    TextContainer,
-    LabelContainer,
-    FlexTextsContainer,
-    TitleContainer,
-    UserDataContainer
+    TitleContainer
 } from '../profile-personal-information/profile-personal-information.styles';
 
 const Loyalty = ({currentUser}) => (
     <PersonalInformationContainer>
         <TitleContainer>И это тоже работает</TitleContainer>
-        <UserDataContainer>
-            <LabelContainer>Работает</LabelContainer>
-            <FlexTextsContainer>
-                <TextContainer>User</TextContainer>
-            </FlexTextsContainer>
-        </UserDataContainer>
+        <UserData label={"Works"} otherText={["Some text"]}/>
     </PersonalInformationContainer>
 );
 
