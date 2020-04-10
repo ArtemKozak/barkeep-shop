@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/collection/collection.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/collection/collection.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/directory/directory.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/directory/directory.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/shop/shop.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/shop/shop.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +120,7 @@
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
       <workItem from="1586256802184" duration="11418000" />
-      <workItem from="1586272283052" duration="84802000" />
-    </task>
-    <task id="LOCAL-00002" summary="first setting up and firebase connecting">
-      <created>1584629469167</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1584629469167</updated>
+      <workItem from="1586272283052" duration="92863000" />
     </task>
     <task id="LOCAL-00003" summary="added scrollable cart-dropdown">
       <created>1584633020706</created>
@@ -460,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586534104817</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="new props for button">
+      <created>1586535075168</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586535075168</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed spinner and added bar collections" />
     <MESSAGE value="optimized code view" />
     <MESSAGE value="Stripe connecting" />
     <MESSAGE value="package changed" />
@@ -556,7 +560,8 @@
     <MESSAGE value="added UserData component" />
     <MESSAGE value="added auto generated key to UserData map" />
     <MESSAGE value="added button if there is no text in field" />
-    <option name="LAST_COMMIT_MESSAGE" value="added button if there is no text in field" />
+    <MESSAGE value="new props for button" />
+    <option name="LAST_COMMIT_MESSAGE" value="new props for button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -571,10 +576,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586534104614">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586535074997">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586534104614" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586535074997" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -619,9 +624,9 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="145" y="206" key="new project wizard/0.0.1536.960@0.0.1536.960" timestamp="1584621500790" />
-    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1586368019591">
+    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1586546933304">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1586368019591" />
+    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1586546933304" />
   </component>
 </project>

@@ -7,7 +7,7 @@ const INITIAL_STATE = {
         //   linkUrl: 'shop/hats'
         // },
         {
-            title: 'jiggers',
+            title: 'Джиггеры',
             imageUrl: 'https://i.ibb.co/6H0MYKm/jigger.jpg',
             id: 2,
             linkUrl: 'shop/jiggers'
@@ -19,33 +19,33 @@ const INITIAL_STATE = {
         //   linkUrl: 'shop/hats'
         // },
         {
-            title: 'geysers',
+            title: 'Гейзеры',
             imageUrl: 'https://i.ibb.co/wzFcVV5/geyser.jpg',
             id: 4,
             linkUrl: 'shop/geysers'
         },
         {
-            title: 'strainers',
+            title: 'Стейнеры',
             imageUrl: 'https://i.ibb.co/605XVJ7/strainer.jpg',
             id: 5,
             linkUrl: 'shop/strainers'
         },
         {
-            title: 'barSpoons',
+            title: 'Барные Ложки',
             imageUrl: 'https://i.ibb.co/fdfh9nP/baeSpoon.jpg',
             size: 'large',
             id: 6,
             linkUrl: 'shop/barspoons'
         },
         {
-            title: 'shakersBostonsky',
+            title: 'Шейкеры Бостонские',
             imageUrl: 'https://i.ibb.co/xfYQ5bb/shaker-Bostonsky.jpg',
             id: 7,
             size: 'large',
             linkUrl: 'shop/shakersbostonsky'
         },
         {
-            title: 'madlers',
+            title: 'Мадлеры',
             imageUrl: 'https://i.ibb.co/3pXHmqq/madler.jpg',
             size: 'large',
             id: 8,

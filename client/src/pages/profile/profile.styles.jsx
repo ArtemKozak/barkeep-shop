@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ProfilePageContainer = styled.div`
   display: flex;
- font-size: 14px;
+  font-size: 14px;
+  position: relative;
 `;
 
 export const HorizontalLine = styled.div`

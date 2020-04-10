@@ -1,5 +1,6 @@
-import React from 'react';
-import {Route, Switch} from "react-router-dom";
+import React, {useContext} from 'react'
+import {__RouterContext, Route, Switch} from 'react-router-dom'
+import {animated, useTransition} from 'react-spring'
 
 import ProfileNavigation from "../../components/profile-navigation/profile-navigation.component";
 import PersonalInformationContainerPage
@@ -9,16 +10,53 @@ import LoyaltyContainerPage from "../../components/profile-loyalty/profile-loyal
 import {HorizontalLine, ProfilePageContainer} from './profile.styles';
 
 
-const ProfilePage = () => (
-    <ProfilePageContainer>
-        <ProfileNavigation/>
-        <HorizontalLine/>
-        <Switch>
-            <Route exact path='/profile/personal-information/' component={PersonalInformationContainerPage}/>
-            <Route path='/profile/loyalty' component={LoyaltyContainerPage}/>
-        </Switch>
-        <HorizontalLine/>
-    </ProfilePageContainer>
-);
+function useRouter() {
+    return useContext(__RouterContext)
+}
+
+const ProfilePage = () => {
+    const {location} = useRouter();
+
+    const transitions = useTransition(location, location => location.key, {
+        from: {
+            opacity: 0,
+            transform: `translateY(80%)`,
+            background: `white`,
+            overflow: `hidden`
+        },
+        enter: {
+            opacity: 1,
+            transform: 'translateY(0)'
+        },
+        leave: {
+            left: '321px',
+            position: 'absolute',
+            opacity: 0,
+            // transform: `translateY(-40%)`,
+            transform: `rotate(30deg)`,
+        }
+    });
+
+    return (
+        <ProfilePageContainer>
+            <ProfileNavigation/>
+            <HorizontalLine/>
+            {
+                transitions.map(({item, props: transition, key}) => (
+                    <animated.div key={key} style={transition}>
+                        <Switch location={item}>
+                            <Route exact path='/profile/personal-information/'
+                                   component={PersonalInformationContainerPage}/>
+                            <Route path='/profile/loyalty' component={LoyaltyContainerPage}/>
+                        </Switch>
+                    </animated.div>
+                ))
+            }
+
+            <HorizontalLine/>
+        </ProfilePageContainer>
+    )
+
+};
 
 export default ProfilePage;
