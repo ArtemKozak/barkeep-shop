@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-add-data-button/profile-add-data-button.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-add-data-button/profile-add-data-button.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/user-data-container/user-data-container.component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/user-data-container/user-data-container.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,14 +115,7 @@
       <workItem from="1585771078700" duration="9551000" />
       <workItem from="1585997436973" duration="13176000" />
       <workItem from="1586256802184" duration="11418000" />
-      <workItem from="1586272283052" duration="83983000" />
-    </task>
-    <task id="LOCAL-00001" summary="first setting up and firebase connecting">
-      <created>1584629455053</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1584629455053</updated>
+      <workItem from="1586272283052" duration="84802000" />
     </task>
     <task id="LOCAL-00002" summary="first setting up and firebase connecting">
       <created>1584629469167</created>
@@ -465,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586530547432</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="added button if there is no text in field">
+      <created>1586534104817</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1586534104817</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added sagas" />
     <MESSAGE value="fixed spinner and added bar collections" />
     <MESSAGE value="optimized code view" />
     <MESSAGE value="Stripe connecting" />
@@ -561,7 +555,8 @@
     <MESSAGE value=" small reducer changes" />
     <MESSAGE value="added UserData component" />
     <MESSAGE value="added auto generated key to UserData map" />
-    <option name="LAST_COMMIT_MESSAGE" value="added auto generated key to UserData map" />
+    <MESSAGE value="added button if there is no text in field" />
+    <option name="LAST_COMMIT_MESSAGE" value="added button if there is no text in field" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -576,10 +571,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586530547237">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586534104614">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586530547237" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586534104614" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -616,10 +611,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586397026260">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586534107159">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586397026260" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586534107159" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
