@@ -1,6 +1,6 @@
 import React from "react";
 
-import UserData from "../user-data-container/user-data-container.component";
+import UserData from "../profile-data-container/profile-data-container.component";
 
 import {
     PersonalInformationContainer,

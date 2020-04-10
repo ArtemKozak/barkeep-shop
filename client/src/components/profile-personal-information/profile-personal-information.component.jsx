@@ -1,7 +1,7 @@
 import React from "react";
 import {formatPhoneNumberIntl} from 'react-phone-number-input';
 
-import UserData from "../user-data-container/user-data-container.component";
+import UserData from "../profile-data-container/profile-data-container.component";
 
 import {PersonalInformationContainer, TitleContainer} from './profile-personal-information.styles';
 
@@ -9,7 +9,7 @@ const PersonalInformation = ({currentUser}) => (
     <PersonalInformationContainer>
         <TitleContainer>Личные данные</TitleContainer>
         <UserData label={"Имя"} otherText={[currentUser.displayName]}/>
-        <UserData label={"Электронная потча"} otherText={[currentUser.email]}/>
+        <UserData label={"Электронная потча"} otherText={null}/>
         <UserData label={"Телефоны"}
                   otherText={[formatPhoneNumberIntl("+380990123456"), formatPhoneNumberIntl("+380997891011")]}/>
         <UserData label={"Адреса для доставок"}
