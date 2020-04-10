@@ -12,6 +12,7 @@ const PersonalInformationWithSpinner = WithSpinner(PersonalInformation);
 const PersonalInformationContainerPage = ({currentUser}) => (
     <ProfileDataContainer>
         <PersonalInformationWithSpinner isLoading={!currentUser} currentUser={currentUser}/>
+        {console.log({currentUser})}
     </ProfileDataContainer>
 );
 

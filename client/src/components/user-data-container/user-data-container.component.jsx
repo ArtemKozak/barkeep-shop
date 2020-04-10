@@ -1,4 +1,5 @@
 import React from "react";
+import shortid from 'shortid';
 
 import {
     TextContainer,
@@ -11,8 +12,9 @@ const UserData = (props) => (
         <UserDataContainer>
             <LabelContainer>{props.label}</LabelContainer>
             <FlexTextsContainer>
-                {props.otherText.map((text) => (
-                    <TextContainer>{text}</TextContainer>
+                {
+                    props.otherText.map((text) => (
+                    <TextContainer key={shortid.generate()}>{text}</TextContainer>
                 ))}
             </FlexTextsContainer>
         </UserDataContainer>

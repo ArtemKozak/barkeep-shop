@@ -19,6 +19,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "react-phone-number-input": "^3.0.22",
+    "shortid": "^2.2.15",
     "stripe": "^8.39.0"
   },
   "devDependencies": {
