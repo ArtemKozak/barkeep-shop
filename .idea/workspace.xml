@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/public/logo1000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/logo1000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/logo50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/directory/directory.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/directory/directory.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/global.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/global.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +117,7 @@
       <workItem from="1586256802184" duration="11418000" />
       <workItem from="1586272283052" duration="94564000" />
       <workItem from="1586562390305" duration="1294000" />
-      <workItem from="1586610494781" duration="8260000" />
-    </task>
-    <task id="LOCAL-00004" summary="added message when cart list is empty">
-      <created>1584648114626</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1584648114626</updated>
+      <workItem from="1586610494781" duration="11738000" />
     </task>
     <task id="LOCAL-00005" summary="added checkout page">
       <created>1584717346286</created>
@@ -473,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586557378151</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="added new mobile menu">
+      <created>1586626311437</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1586626311438</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="optimized code view" />
     <MESSAGE value="Stripe connecting" />
     <MESSAGE value="package changed" />
     <MESSAGE value="rollback to stable" />
@@ -569,7 +557,8 @@
     <MESSAGE value="added auto generated key to UserData map" />
     <MESSAGE value="added button if there is no text in field" />
     <MESSAGE value="new props for button" />
-    <option name="LAST_COMMIT_MESSAGE" value="new props for button" />
+    <MESSAGE value="added new mobile menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new mobile menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -584,10 +573,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586557377854">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586626311097">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586557377854" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586626311097" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

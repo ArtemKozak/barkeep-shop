@@ -34,7 +34,6 @@ const ProfilePage = () => {
             position: 'absolute',
             opacity: 0,
             background: `white`,
-            // transform: ``,
             transform: `translateY(60%)`,
         }
     });

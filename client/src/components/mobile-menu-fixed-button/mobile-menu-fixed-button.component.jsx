@@ -7,38 +7,36 @@ import {selectCurrentUser} from '../../redux/user/user.selectors';
 import {signOutStart} from '../../redux/user/user.actions';
 
 
-import './mobile-menu-fixed-button.styles.scss';
-import {OptionLink,} from "../header/header.styles";
+import {OptionLink, MenuButtonContainer, Nav, MenuToggle, MenuToggleSpan, CheckoutInput, MenuItem, ListItem} from "./mobile-menu-fixed-button.styles";
 
 const MobileMenuFixedButton = ({currentUser, hidden, signOutStart}) => (
-    <div className='button-container'>
-        <nav role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox"/>
-                <span/>
-                <span/>
-                <span/>
-                <ul id="menu">
+    <MenuButtonContainer className='button-container'>
+        <Nav role="navigation">
+            <MenuToggle id="menuToggle">
+                <CheckoutInput type="checkbox"/>
+                <MenuToggleSpan/>
+                <MenuToggleSpan/>
+                <MenuToggleSpan/>
+                <MenuItem id='menu'>
                     {currentUser ? (
-                        <li><a href="/profile">
-                            <p>
+                        <ListItem>
+                            <OptionLink to="/profile">
                                 <p>Здравствуйте,</p>
                                 <p>{currentUser.displayName}</p>
-                            </p>
-                            <p id='userExit'>Выйти</p>
-                        </a>
-                        </li>
+                        </OptionLink>
+                        </ListItem>
                     ) : (
                         <OptionLink to='/signin'>Войдите в личный кабинет</OptionLink>
                     )}
-                    <li><a href="/">Домой</a></li>
-                    <li><a href="/shop">Магазин</a></li>
-                    <li><a href="/shop">О нас</a></li>
-                </ul>
-            </div>
-        </nav>
+                    <ListItem><OptionLink to="/">Домой</OptionLink></ListItem>
+                    <ListItem><OptionLink to="/shop">Магазин</OptionLink></ListItem>
+                    <ListItem><OptionLink to="/shop">О нас</OptionLink></ListItem>
+                    {currentUser ? (<ListItem><OptionLink className='userExit'>Выйти</OptionLink></ListItem>) : null}
+                </MenuItem>
+            </MenuToggle>
+        </Nav>
         {hidden ? null : <CartDropdown/>}
-    </div>
+    </MenuButtonContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
