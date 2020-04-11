@@ -26,14 +26,16 @@ const ProfilePage = () => {
         },
         enter: {
             opacity: 1,
-            transform: 'translateY(0)'
+            transform: 'translateY(0)',
+            background: `white`,
         },
         leave: {
             left: '321px',
             position: 'absolute',
             opacity: 0,
-            // transform: `translateY(-40%)`,
-            transform: `rotate(30deg)`,
+            background: `white`,
+            // transform: ``,
+            transform: `translateY(60%)`,
         }
     });
 
