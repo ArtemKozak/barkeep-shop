@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="mobile menu styled in jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,14 +118,7 @@
       <workItem from="1586256802184" duration="11418000" />
       <workItem from="1586272283052" duration="94564000" />
       <workItem from="1586562390305" duration="1294000" />
-      <workItem from="1586610494781" duration="11738000" />
-    </task>
-    <task id="LOCAL-00005" summary="added checkout page">
-      <created>1584717346286</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1584717346286</updated>
+      <workItem from="1586610494781" duration="16533000" />
     </task>
     <task id="LOCAL-00006" summary="added addItem and removeItem functionality to checkout page">
       <created>1584725509056</created>
@@ -462,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586626311438</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="mobile menu styled in jsx">
+      <created>1586629762074</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1586629762074</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Stripe connecting" />
     <MESSAGE value="package changed" />
     <MESSAGE value="rollback to stable" />
     <MESSAGE value="yarn install" />
@@ -558,7 +558,8 @@
     <MESSAGE value="added button if there is no text in field" />
     <MESSAGE value="new props for button" />
     <MESSAGE value="added new mobile menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new mobile menu" />
+    <MESSAGE value="mobile menu styled in jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile menu styled in jsx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -573,10 +574,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586626311097">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586634653450">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586626311097" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586634653450" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

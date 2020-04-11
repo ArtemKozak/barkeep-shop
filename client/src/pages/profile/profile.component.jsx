@@ -16,27 +16,26 @@ function useRouter() {
 
 const ProfilePage = () => {
     const {location} = useRouter();
-
-    const transitions = useTransition(location, location => location.key, {
-        from: {
+    const mq = window.matchMedia( "(max-width: 800px)" ).matches;
+    const configs = {from: {
             opacity: 0,
-            transform: `translateY(80%)`,
-            background: `white`,
+            transform: `${(mq ? 'translateX(60%)' : 'translateY(60%)')}`,
             overflow: `hidden`
         },
         enter: {
             opacity: 1,
-            transform: 'translateY(0)',
+            transform: `${(mq ? 'translateX(0)' : 'translateY(0)')}`,
             background: `white`,
         },
         leave: {
-            left: '321px',
+            left: `${(mq ? '0' : '321px')}`,
+            top: `${(mq ? '305px' : 'unset')}`,
             position: 'absolute',
             opacity: 0,
-            background: `white`,
-            transform: `translateY(60%)`,
-        }
-    });
+            transform: `${(mq ? 'translateX(-60%)' : 'translateY(60%)')}`,
+        }};
+
+    const transitions = useTransition(location, location => location.key, configs);
 
     return (
         <ProfilePageContainer>
@@ -48,7 +47,7 @@ const ProfilePage = () => {
                         <Switch location={item}>
                             <Route exact path='/profile/personal-information/'
                                    component={PersonalInformationContainerPage}/>
-                            <Route path='/profile/loyalty' component={LoyaltyContainerPage}/>
+                            <Route exact path='/profile/loyalty' component={LoyaltyContainerPage}/>
                         </Switch>
                     </animated.div>
                 ))

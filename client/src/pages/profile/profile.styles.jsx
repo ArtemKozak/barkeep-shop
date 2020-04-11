@@ -4,6 +4,10 @@ export const ProfilePageContainer = styled.div`
   display: flex;
   font-size: 14px;
   position: relative;
+  
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const HorizontalLine = styled.div`
