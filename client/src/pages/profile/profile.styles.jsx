@@ -19,4 +19,8 @@ export const ProfileDataContainer = styled.div`
   width: 700px;
   
   &:first-child {width: 700 px;}
+  
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+  }
 `;

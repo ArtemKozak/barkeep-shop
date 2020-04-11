@@ -7,7 +7,16 @@ import {selectCurrentUser} from '../../redux/user/user.selectors';
 import {signOutStart} from '../../redux/user/user.actions';
 
 
-import {OptionLink, MenuButtonContainer, Nav, MenuToggle, MenuToggleSpan, CheckoutInput, MenuItem, ListItem} from "./mobile-menu-fixed-button.styles";
+import {
+    CheckoutInput,
+    ListItem,
+    MenuButtonContainer,
+    MenuItem,
+    MenuToggle,
+    MenuToggleSpan,
+    Nav,
+    OptionLink
+} from "./mobile-sidebar.styles";
 
 const MobileMenuFixedButton = ({currentUser, hidden, signOutStart}) => (
     <MenuButtonContainer className='button-container'>
@@ -23,15 +32,22 @@ const MobileMenuFixedButton = ({currentUser, hidden, signOutStart}) => (
                             <OptionLink to="/profile">
                                 <p>Здравствуйте,</p>
                                 <p>{currentUser.displayName}</p>
-                        </OptionLink>
+                            </OptionLink>
                         </ListItem>
                     ) : (
-                        <OptionLink to='/signin'>Войдите в личный кабинет</OptionLink>
+                        <ListItem>
+                            <OptionLink to='/signin'>
+                                <p>Войдите</p>
+                                <p>в личный кабинет</p>
+                            </OptionLink>
+                        </ListItem>
                     )}
                     <ListItem><OptionLink to="/">Домой</OptionLink></ListItem>
+                    <ListItem><OptionLink to="/checkout">Корзина</OptionLink></ListItem>
                     <ListItem><OptionLink to="/shop">Магазин</OptionLink></ListItem>
                     <ListItem><OptionLink to="/shop">О нас</OptionLink></ListItem>
-                    {currentUser ? (<ListItem><OptionLink className='userExit'>Выйти</OptionLink></ListItem>) : null}
+                    {currentUser ? (<ListItem><OptionLink className='userExit' as='div'
+                                                          onClick={signOutStart}>Выйти</OptionLink></ListItem>) : null}
                 </MenuItem>
             </MenuToggle>
         </Nav>
@@ -45,7 +61,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => ({
-    signOutStart: () => dispatch(signOutStart())
+    signOutStart: () => dispatch(signOutStart()),
 });
 
 export default connect(

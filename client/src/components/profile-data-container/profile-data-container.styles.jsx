@@ -5,12 +5,21 @@ export const LabelContainer = styled.label`
   color: #505050;
   display: flex;
   width: 35%;
+  
+  @media screen and (max-width: 800px) {
+    padding: 20px 0 20px 0;
+    width: 30%;
+  }
 `;
 
 export const FlexTextsContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 65%;
+  
+  @media screen and (max-width: 800px) {
+    width: 70%;
+  }
 `;
 
 export const TextContainer = styled.p`
