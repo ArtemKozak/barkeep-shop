@@ -24,7 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="fixed mobile sidebar closing" />
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added google analytics">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,13 +141,7 @@
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
       <workItem from="1586687249222" duration="15561000" />
-    </task>
-    <task id="LOCAL-00014" summary="added sagas">
-      <created>1585831582777</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1585831582777</updated>
+      <workItem from="1586726281707" duration="871000" />
     </task>
     <task id="LOCAL-00015" summary="fixed spinner and added bar collections">
       <created>1585838611819</created>
@@ -482,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586708833827</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="added google analytics">
+      <created>1586726372957</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1586726372958</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +557,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="mobile view improved" />
     <MESSAGE value="added mobile view for collections and checkout" />
     <MESSAGE value="added mobile view for cart dropdown" />
     <MESSAGE value="added facebook login button" />
@@ -578,7 +581,8 @@
     <MESSAGE value="changed HorizontalLite to Line at the profile page" />
     <MESSAGE value="added sidebarHidden reducer" />
     <MESSAGE value="fixed mobile sidebar closing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed mobile sidebar closing" />
+    <MESSAGE value="added google analytics" />
+    <option name="LAST_COMMIT_MESSAGE" value="added google analytics" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
