@@ -4,7 +4,7 @@ import {createStructuredSelector} from "reselect";
 
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
-import SidebarIcon from '../mobile-sidebar-icon/mobile-sidebar-icon.component';
+import MobileMenuFixedButton from "../mobile-sidebar/mobile-sidebar.component";
 
 import {selectCartHidden} from "../../redux/cart/cart.selectors";
 
@@ -19,8 +19,8 @@ const MobileHeader = ({hidden}) => (
         <LogoContainer to='/'>
             <p>Barkeep Shop</p>
         </LogoContainer>
-        <SidebarIcon/>
         <CartIcon/>
+        <MobileMenuFixedButton/>
         {hidden ? null : <CartDropdown/>}
     </HeaderContainer>
 );

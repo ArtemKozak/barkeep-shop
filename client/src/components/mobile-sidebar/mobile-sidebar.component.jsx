@@ -19,37 +19,42 @@ import {
 import {selectSidebarHidden} from "../../redux/sidebar/sidebar.selectors";
 import {toggleSidebarHidden} from "../../redux/sidebar/sidebar.actions";
 
-const MobileMenuFixedButton = ({currentUser, hidden, toggleSidebarHidden, signOutStart}) => (
+const MobileMenuFixedButton = ({sidebarHidden, currentUser, toggleSidebarHidden, signOutStart}) => (
     <MenuButtonContainer className='button-container'>
         <Nav role="navigation">
             <MenuToggle id="menuToggle">
-                <CheckoutInput type="checkbox"/>
-                <FullScreenMenuContainer onClick={toggleSidebarHidden}/>
+                {!sidebarHidden ? <FullScreenMenuContainer onClick={toggleSidebarHidden}/> : null}
+                <CheckoutInput onChange={toggleSidebarHidden} checked={!sidebarHidden} type="checkbox"/>
                 <MenuToggleSpan/>
                 <MenuToggleSpan/>
                 <MenuToggleSpan/>
                 <MenuItem id='menu'>
                     {currentUser ? (
-                        <ListItem>
+                        <ListItem onClick={toggleSidebarHidden}>
                             <OptionLink to="/profile">
                                 <p>Здравствуйте,</p>
                                 <p>{currentUser.displayName}</p>
                             </OptionLink>
                         </ListItem>
                     ) : (
-                        <ListItem>
+                        <ListItem onClick={toggleSidebarHidden}>
                             <OptionLink to='/signin'>
                                 <p>Войдите</p>
                                 <p>в личный кабинет</p>
                             </OptionLink>
                         </ListItem>
                     )}
-                    <ListItem><OptionLink to="/">Домой</OptionLink></ListItem>
-                    <ListItem><OptionLink to="/checkout">Корзина</OptionLink></ListItem>
-                    <ListItem><OptionLink to="/shop">Магазин</OptionLink></ListItem>
-                    <ListItem><OptionLink to="/shop">О нас</OptionLink></ListItem>
-                    {currentUser ? (<ListItem><OptionLink className='userExit' as='div'
-                                                          onClick={signOutStart}>Выйти</OptionLink></ListItem>) : null}
+                    <ListItem onClick={toggleSidebarHidden}><OptionLink to="/">Домой</OptionLink></ListItem>
+                    <ListItem onClick={toggleSidebarHidden}><OptionLink to="/checkout">Корзина</OptionLink></ListItem>
+                    <ListItem onClick={toggleSidebarHidden}><OptionLink to="/shop">Магазин</OptionLink></ListItem>
+                    <ListItem onClick={toggleSidebarHidden}><OptionLink to="/shop">О нас</OptionLink></ListItem>
+                    {currentUser ? (
+                        <ListItem onClick={toggleSidebarHidden}>
+                            <OptionLink className='userExit' as='div' onClick={signOutStart}>
+                                Выйти
+                            </OptionLink>
+                        </ListItem>
+                    ) : null}
                 </MenuItem>
             </MenuToggle>
         </Nav>
@@ -58,7 +63,7 @@ const MobileMenuFixedButton = ({currentUser, hidden, toggleSidebarHidden, signOu
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
-    hidden: selectSidebarHidden
+    sidebarHidden: selectSidebarHidden,
 });
 
 const mapDispatchToProps = dispatch => ({

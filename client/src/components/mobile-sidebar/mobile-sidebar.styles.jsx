@@ -89,7 +89,7 @@ export const MenuItem = styled.ul`
 `;
 
 export const FullScreenMenuContainer = styled.div`
-  display: none;
+  display: fixed;
   opacity: 0;
   overflow: hidden;
   height: 110vh;
@@ -100,7 +100,6 @@ export const FullScreenMenuContainer = styled.div`
   top: 0;
   margin: 0;
   padding: 0;
-  background-color: green;
 `;
 
 export const CheckoutInput = styled.input`
@@ -142,4 +141,8 @@ export const CheckoutInput = styled.input`
 export const ListItem = styled.li`
   padding: 10px 0;
   transition-delay: 2s;
+  
+  div {
+    cursor: pointer;
+  }
 `;

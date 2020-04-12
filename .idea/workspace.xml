@@ -25,19 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.actions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.reducer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.selectors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.types.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/collection-preview/collection-preview.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-preview/collection-preview.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.styles.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/root-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,21 +144,7 @@
       <workItem from="1586562390305" duration="1294000" />
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
-      <workItem from="1586687249222" duration="10998000" />
-    </task>
-    <task id="LOCAL-00010" summary="added stripe integration">
-      <created>1584838839766</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1584838839766</updated>
-    </task>
-    <task id="LOCAL-00011" summary="synchronized with Yihua repo">
-      <created>1585155032627</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1585155032627</updated>
+      <workItem from="1586687249222" duration="14384000" />
     </task>
     <task id="LOCAL-00012" summary="added loading spinner and moved shop data to firestore">
       <created>1585488941120</created>
@@ -496,7 +475,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586694419959</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="added sidebarHidden reducer">
+      <created>1586701242374</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1586701242374</updated>
+    </task>
+    <task id="LOCAL-00060" summary="added sidebarHidden reducer">
+      <created>1586701340583</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586701340583</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +560,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working server deployed to heroku" />
     <MESSAGE value="added mobile view styles" />
     <MESSAGE value="mobile view improved" />
     <MESSAGE value="added mobile view for collections and checkout" />
@@ -592,7 +584,8 @@
     <MESSAGE value="fixed mobile view" />
     <MESSAGE value="add mobile Dark Mode" />
     <MESSAGE value="changed HorizontalLite to Line at the profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed HorizontalLite to Line at the profile page" />
+    <MESSAGE value="added sidebarHidden reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sidebarHidden reducer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -607,10 +600,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586694419737">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586701340394">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586694419737" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586701340394" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
