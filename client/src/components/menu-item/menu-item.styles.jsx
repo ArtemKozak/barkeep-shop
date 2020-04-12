@@ -10,13 +10,14 @@ export const MenuItemContainer = styled.div`
 	justify-content: center;
 	border: 1px solid black;
 	margin: 0 7.5px 15px;
+	position: relative;
 
 	&:hover {
 		cursor: pointer;
 
 		& .background-image {
 			transform: scale(1.1);
-			transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+			transition: transform 5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 		}
 
 		& .content {
@@ -47,6 +48,8 @@ export const BackgroundImageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
+  text-align: center;
+  max-width: 95%;
   height: 90px;
   padding: 0 25px;
   display: flex;
@@ -69,4 +72,5 @@ export const ContentTitle = styled.span`
 export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
+  color: #4a4a4a;
 `;

@@ -17,6 +17,11 @@ export const CheckoutPageContainer = styled.div`
     width: 100%;
     }
   }
+  
+  @media screen and (max-width: 800px) {
+    padding: 15px;
+    color: white;
+  }
 `;
 
 export const CheckoutHeaderContainer = styled.div`

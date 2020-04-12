@@ -3,10 +3,17 @@ import styled, {css} from 'styled-components';
 const subColor = 'grey';
 const mainColor = 'black';
 
+const mobileSubColor = 'lightgrey';
+const mobileMainColor = 'white';
+
 const shrinkLabelStyles = css`
   top: -14px;
   font-size: 12px;
   color: ${mainColor};
+  
+  @media screen and (max-width: 800px) {
+    color: ${mobileMainColor};
+  }
 `;
 
 export const GroupContainer = styled.div`
@@ -38,6 +45,12 @@ export const FormInputContainer = styled.input`
   &:focus ~ label {
     ${shrinkLabelStyles}
   }
+  
+  @media screen and (max-width: 800px) {
+    background-color: #121212;
+    color: ${mobileSubColor};
+    border-bottom: 1px solid ${mobileSubColor};
+  }
 `;
 
 export const FormInputLabel = styled.label`
@@ -52,5 +65,9 @@ export const FormInputLabel = styled.label`
 
   &.shrink {
     ${shrinkLabelStyles}
+  }
+  
+  @media screen and (max-width: 800px) {
+    color: ${mobileSubColor};
   }
 `;

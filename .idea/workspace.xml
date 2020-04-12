@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart-icon/cart-icon.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart-icon/cart-icon.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu-fixed-button/mobile-menu-fixed-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart-dropdown/cart-dropdown.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart-dropdown/cart-dropdown.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-item/checkout-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-item/checkout-item.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/form-input/form-input.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/form-input/form-input.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/global.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/global.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/collection/collection.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/collection/collection.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/sign-in-and-sign-up/sign-in-and-sign-up.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +74,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -125,14 +149,8 @@
       <workItem from="1586272283052" duration="94564000" />
       <workItem from="1586562390305" duration="1294000" />
       <workItem from="1586610494781" duration="21332000" />
-      <workItem from="1586641680993" duration="235000" />
-    </task>
-    <task id="LOCAL-00007" summary="added persistor">
-      <created>1584731824946</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1584731824946</updated>
+      <workItem from="1586641680993" duration="838000" />
+      <workItem from="1586687249222" duration="2861000" />
     </task>
     <task id="LOCAL-00008" summary="added collection overview component">
       <created>1584829606150</created>
@@ -470,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586634691464</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="fixed mobile view">
+      <created>1586641957819</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1586641957819</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -506,17 +531,15 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -538,10 +561,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rollback to stable" />
     <MESSAGE value="yarn install" />
     <MESSAGE value="fixing server dev" />
     <MESSAGE value="working server deployed to heroku" />
@@ -566,7 +589,8 @@
     <MESSAGE value="added new mobile menu" />
     <MESSAGE value="mobile menu styled in jsx" />
     <MESSAGE value="changed mobile menu flex direction to column" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed mobile menu flex direction to column" />
+    <MESSAGE value="fixed mobile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed mobile view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -581,10 +605,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586634691260">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586641957411">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586634691260" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586641957411" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

@@ -8,6 +8,11 @@ export const GlobalStyle = createGlobalStyle`
         
         @media screen and (max-width: 800px) {
             padding: 0;
+            background-color: #121212;
+            
+            a, h1, h2, span, label {
+              color: white;
+            }
         }
     }
     

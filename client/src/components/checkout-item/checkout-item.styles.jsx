@@ -48,15 +48,19 @@ export const ButtonContainer = styled.div`
   width: 30px;
   height: 30px;
   text-align: center;
+  
+  @media screen and (max-width: 800px) {
+    color: white;
+  }
 `;
 
 export const PriceContainer = styled.span`
-  width: 40%;
+  width: 35%;
 `;
 
 export const QuantityContainer = styled(TextContainer)`
   display: flex;
-  width: 20%;
+  width: 30%;
 
   span {
     margin: 0 10px;
@@ -78,7 +82,7 @@ export const QuantityContainer = styled(TextContainer)`
 `;
 
 export const TotalPriceContainer = styled.span`
-  width: 40%;
+  width: 35%;
   text-align: right;
 }
 `;

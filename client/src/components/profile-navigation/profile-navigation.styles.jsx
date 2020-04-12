@@ -7,6 +7,19 @@ export const NavigationContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+  
+  @media screen and (max-width: 800px) {
+    padding: 20px 50px 30px 50px;
+    width: 100%;
+    
+    a,div {
+      color: white;
+      
+      &:hover {
+        color: #707070;
+      }
+    }
+  }
 `;
 
 export const NavigationProfileLink = styled(Link)`

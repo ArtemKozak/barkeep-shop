@@ -20,16 +20,15 @@ const ProfilePage = () => {
     const configs = {from: {
             opacity: 0,
             transform: `${(mq ? 'translateX(60%)' : 'translateY(60%)')}`,
-            overflow: `hidden`
+            overflow: `hidden`,
         },
         enter: {
             opacity: 1,
             transform: `${(mq ? 'translateX(0)' : 'translateY(0)')}`,
-            background: `white`,
         },
         leave: {
             left: `${(mq ? '0' : '321px')}`,
-            top: `${(mq ? '305px' : 'unset')}`,
+            top: `${(mq ? '275px' : 'unset')}`,
             position: 'absolute',
             opacity: 0,
             transform: `${(mq ? 'translateX(-60%)' : 'translateY(60%)')}`,
