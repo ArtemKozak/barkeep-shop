@@ -26,16 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart-dropdown/cart-dropdown.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart-dropdown/cart-dropdown.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-item/checkout-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-item/checkout-item.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/form-input/form-input.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/form-input/form-input.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/global.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/global.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/collection/collection.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/collection/collection.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,14 +140,7 @@
       <workItem from="1586562390305" duration="1294000" />
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
-      <workItem from="1586687249222" duration="2861000" />
-    </task>
-    <task id="LOCAL-00008" summary="added collection overview component">
-      <created>1584829606150</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1584829606150</updated>
+      <workItem from="1586687249222" duration="4204000" />
     </task>
     <task id="LOCAL-00009" summary="added respective selectors and updating corresponding components">
       <created>1584834746134</created>
@@ -495,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586641957819</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="add mobile Dark Mode">
+      <created>1586690532918</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1586690532919</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="yarn install" />
     <MESSAGE value="fixing server dev" />
     <MESSAGE value="working server deployed to heroku" />
     <MESSAGE value="added mobile view styles" />
@@ -590,7 +579,8 @@
     <MESSAGE value="mobile menu styled in jsx" />
     <MESSAGE value="changed mobile menu flex direction to column" />
     <MESSAGE value="fixed mobile view" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed mobile view" />
+    <MESSAGE value="add mobile Dark Mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mobile Dark Mode" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -605,10 +595,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586641957411">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586690532601">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586641957411" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586690532601" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -645,10 +635,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586534107159">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586690535089">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586534107159" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586690535089" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

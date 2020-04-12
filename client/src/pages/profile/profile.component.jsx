@@ -7,7 +7,7 @@ import PersonalInformationContainerPage
     from "../../components/profile-personal-information/profile-personal-information.container";
 import LoyaltyContainerPage from "../../components/profile-loyalty/profile-loyalty.container";
 
-import {HorizontalLine, ProfilePageContainer} from './profile.styles';
+import {Line, ProfilePageContainer} from './profile.styles';
 
 
 function useRouter() {
@@ -39,7 +39,7 @@ const ProfilePage = () => {
     return (
         <ProfilePageContainer>
             <ProfileNavigation/>
-            <HorizontalLine/>
+            <Line/>
             {
                 transitions.map(({item, props: transition, key}) => (
                     <animated.div key={key} style={transition}>
@@ -52,7 +52,7 @@ const ProfilePage = () => {
                 ))
             }
 
-            <HorizontalLine/>
+            <Line/>
         </ProfilePageContainer>
     )
 
