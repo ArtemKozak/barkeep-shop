@@ -9,6 +9,7 @@ import {signOutStart} from '../../redux/user/user.actions';
 
 import {
     CheckoutInput,
+    FullScreenMenuContainer,
     ListItem,
     MenuButtonContainer,
     MenuItem,
@@ -17,12 +18,15 @@ import {
     Nav,
     OptionLink
 } from "./mobile-sidebar.styles";
+import {selectSidebarHidden} from "../../redux/sidebar/sidebar.selectors";
+import {toggleSidebarHidden} from "../../redux/sidebar/sidebar.actions";
 
-const MobileMenuFixedButton = ({currentUser, hidden, signOutStart}) => (
+const MobileMenuFixedButton = ({currentUser, hidden, toggleSidebarHidden, signOutStart}) => (
     <MenuButtonContainer className='button-container'>
         <Nav role="navigation">
             <MenuToggle id="menuToggle">
                 <CheckoutInput type="checkbox"/>
+                <FullScreenMenuContainer onClick={toggleSidebarHidden}/>
                 <MenuToggleSpan/>
                 <MenuToggleSpan/>
                 <MenuToggleSpan/>
@@ -51,17 +55,17 @@ const MobileMenuFixedButton = ({currentUser, hidden, signOutStart}) => (
                 </MenuItem>
             </MenuToggle>
         </Nav>
-        {hidden ? null : <CartDropdown/>}
     </MenuButtonContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
-    hidden: selectCartHidden
+    hidden: selectSidebarHidden
 });
 
 const mapDispatchToProps = dispatch => ({
     signOutStart: () => dispatch(signOutStart()),
+    toggleSidebarHidden: () => dispatch(toggleSidebarHidden())
 });
 
 export default connect(

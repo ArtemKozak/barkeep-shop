@@ -26,7 +26,7 @@ export const PreviewContainer = styled.div`
   grid-gap: 30px;
     
   & > div {
-    margin: 0 10px 30px 10px;
+    margin: 10px;
   }
 
   @media screen and (max-width: 1000px) {

@@ -25,8 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.actions.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.reducer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.selectors.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.types.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/collection-preview/collection-preview.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-preview/collection-preview.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/root-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +84,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.11.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/mobile-menu-toggle-icon" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -85,19 +96,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/mobile-menu-toggle-icon" />
+      <recent name="$PROJECT_DIR$/client/src/redux/sidebar" />
+      <recent name="$PROJECT_DIR$/client/src/assets" />
+      <recent name="$PROJECT_DIR$/client/src/pages/terms-of-use" />
+      <recent name="$PROJECT_DIR$/client/src/components/stripe-button" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/public" />
       <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/src/redux/shop" />
       <recent name="$PROJECT_DIR$/src/pages/checkout" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/assets" />
-      <recent name="$PROJECT_DIR$/client/src/pages/terms-of-use" />
-      <recent name="$PROJECT_DIR$/client/src/components/stripe-button" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/client/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -140,14 +151,7 @@
       <workItem from="1586562390305" duration="1294000" />
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
-      <workItem from="1586687249222" duration="4204000" />
-    </task>
-    <task id="LOCAL-00009" summary="added respective selectors and updating corresponding components">
-      <created>1584834746134</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1584834746134</updated>
+      <workItem from="1586687249222" duration="10998000" />
     </task>
     <task id="LOCAL-00010" summary="added stripe integration">
       <created>1584838839766</created>
@@ -485,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586690532919</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="changed HorizontalLite to Line at the profile page">
+      <created>1586694419959</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1586694419959</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,8 +565,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing server dev" />
     <MESSAGE value="working server deployed to heroku" />
     <MESSAGE value="added mobile view styles" />
     <MESSAGE value="mobile view improved" />
@@ -580,7 +591,8 @@
     <MESSAGE value="changed mobile menu flex direction to column" />
     <MESSAGE value="fixed mobile view" />
     <MESSAGE value="add mobile Dark Mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mobile Dark Mode" />
+    <MESSAGE value="changed HorizontalLite to Line at the profile page" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed HorizontalLite to Line at the profile page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -595,10 +607,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586690532601">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586694419737">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586690532601" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586694419737" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

@@ -88,6 +88,21 @@ export const MenuItem = styled.ul`
   }
 `;
 
+export const FullScreenMenuContainer = styled.div`
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  height: 110vh;
+  width: 110vw;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+`;
+
 export const CheckoutInput = styled.input`
   display: flex;
   width: 40px;
@@ -116,6 +131,11 @@ export const CheckoutInput = styled.input`
   &:checked ~ ul {
     transform: none;
   }
+    
+  &:checked ~ ${FullScreenMenuContainer} {
+    display: unset;
+  }
+  
 `;
 
 
