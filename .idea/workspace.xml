@@ -26,10 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar-icon/mobile-sidebar-icon.styles.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,14 +140,7 @@
       <workItem from="1586562390305" duration="1294000" />
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
-      <workItem from="1586687249222" duration="14384000" />
-    </task>
-    <task id="LOCAL-00012" summary="added loading spinner and moved shop data to firestore">
-      <created>1585488941120</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1585488941120</updated>
+      <workItem from="1586687249222" duration="14984000" />
     </task>
     <task id="LOCAL-00013" summary="added collection container">
       <created>1585528982010</created>
@@ -489,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586701340583</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fixed mobile sidebar closing">
+      <created>1586708207068</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586708207068</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +556,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added mobile view styles" />
     <MESSAGE value="mobile view improved" />
     <MESSAGE value="added mobile view for collections and checkout" />
     <MESSAGE value="added mobile view for cart dropdown" />
@@ -585,7 +580,8 @@
     <MESSAGE value="add mobile Dark Mode" />
     <MESSAGE value="changed HorizontalLite to Line at the profile page" />
     <MESSAGE value="added sidebarHidden reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sidebarHidden reducer" />
+    <MESSAGE value="fixed mobile sidebar closing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed mobile sidebar closing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -600,10 +596,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586701340394">
+    <state x="127" y="81" key="CommitChangelistDialog2" timestamp="1586708206863">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586701340394" />
+    <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708206863" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -640,10 +636,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586690535089">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586708210218">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586690535089" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586708210218" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

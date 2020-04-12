@@ -51,7 +51,7 @@ export const MenuToggleSpan = styled.span`
   height: 2px;
   margin-bottom: 5px;
   position: relative;
-  background: white;
+  background: white !important;
   border-radius: 3px;
   z-index: 3;
   transform-origin: 5px 0;
