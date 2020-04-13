@@ -25,8 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added google analytics">
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.container.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.container.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +84,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.11.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/mobile-menu-toggle-icon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -85,19 +96,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/components/mobile-menu-toggle-icon" />
-      <recent name="$PROJECT_DIR$/client/src/redux/sidebar" />
-      <recent name="$PROJECT_DIR$/client/src/assets" />
-      <recent name="$PROJECT_DIR$/client/src/pages/terms-of-use" />
-      <recent name="$PROJECT_DIR$/client/src/components/stripe-button" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/public" />
       <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/src/redux/shop" />
       <recent name="$PROJECT_DIR$/src/pages/checkout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client/src/components/mobile-menu-toggle-icon" />
+      <recent name="$PROJECT_DIR$/client/src/redux/sidebar" />
+      <recent name="$PROJECT_DIR$/client/src/assets" />
+      <recent name="$PROJECT_DIR$/client/src/pages/terms-of-use" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -141,14 +152,7 @@
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
       <workItem from="1586687249222" duration="15561000" />
-      <workItem from="1586726281707" duration="871000" />
-    </task>
-    <task id="LOCAL-00015" summary="fixed spinner and added bar collections">
-      <created>1585838611819</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1585838611819</updated>
+      <workItem from="1586726281707" duration="13589000" />
     </task>
     <task id="LOCAL-00016" summary="optimized code view">
       <created>1586212942674</created>
@@ -486,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586726372958</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="added google analytics">
+      <created>1586728190775</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1586728190775</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

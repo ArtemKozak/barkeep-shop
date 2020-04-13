@@ -6,6 +6,8 @@ import ProfileNavigation from "../../components/profile-navigation/profile-navig
 import PersonalInformationContainerPage
     from "../../components/profile-personal-information/profile-personal-information.container";
 import LoyaltyContainerPage from "../../components/profile-loyalty/profile-loyalty.container";
+import CurrentOrdersContainerPage from "../../components/profile-current-orders/profile-current-orders.container";
+import OrdersHistoryContainerPage from "../../components/profile-orders-history/profile-orders-history.container";
 
 import {Line, ProfilePageContainer} from './profile.styles';
 
@@ -47,6 +49,8 @@ const ProfilePage = () => {
                             <Route exact path='/profile/personal-information/'
                                    component={PersonalInformationContainerPage}/>
                             <Route exact path='/profile/loyalty' component={LoyaltyContainerPage}/>
+                            <Route exact path='/profile/current-orders' component={CurrentOrdersContainerPage}/>
+                            <Route exact path='/profile/orders-history' component={OrdersHistoryContainerPage}/>
                         </Switch>
                     </animated.div>
                 ))

@@ -1,5 +1,4 @@
 import React from "react";
-import {formatPhoneNumberIntl} from 'react-phone-number-input';
 
 import UserData from "../profile-data-container/profile-data-container.component";
 
@@ -12,11 +11,12 @@ const PersonalInformation = ({currentUser}) => (
         <UserData label={"Электронная потча"} otherText={[currentUser.email]}/>
         <UserData
             label={"Телефоны"}
-            otherText={[formatPhoneNumberIntl("+380990123456"), formatPhoneNumberIntl("+380997891011")]}
+            otherText={[currentUser.phones]}
+            phones={true}
             canAdd={true}/>
         <UserData
             label={"Адреса для доставок"}
-            otherText={["Киев, НАЗВАНИЕ2 УЛ., д.2/5 кв.45", "Киев, НАЗВАНИЕ1 УЛ., д.4 кв.52"]}
+            otherText={[currentUser.addresses]}
             canAdd={true}
         />
     </PersonalInformationContainer>

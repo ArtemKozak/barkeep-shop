@@ -7,11 +7,11 @@ import {
     TitleContainer
 } from '../profile-personal-information/profile-personal-information.styles';
 
-const Loyalty = ({currentUser}) => (
+const CurrentOrders = ({currentUser}) => (
     <PersonalInformationContainer>
-        <TitleContainer>Программа лояльности</TitleContainer>
-        <UserData label={"У Вас накоплено"} otherText={[currentUser.loyaltyPoints + ' бонусных грн']} loyalty={true}/>
+        <TitleContainer>Текущие заказы</TitleContainer>
+        <UserData label={"Ну?"} otherText={["Чего смотришь, здесь нет пока ничего"]} loyalty={true}/>
     </PersonalInformationContainer>
 );
 
-export default Loyalty;
+export default CurrentOrders;
