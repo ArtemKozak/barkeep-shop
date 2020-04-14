@@ -10,7 +10,7 @@ import {
 const CurrentOrders = ({currentUser}) => (
     <PersonalInformationContainer>
         <TitleContainer>Текущие заказы</TitleContainer>
-        <UserData label={"Ну?"} otherText={["Чего смотришь, здесь нет пока ничего"]} loyalty={true}/>
+        <UserData label={"Хмм..."} otherText={["Текущих заказов нет"]} loyalty={true}/>
     </PersonalInformationContainer>
 );
 

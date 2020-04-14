@@ -24,20 +24,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added google analytics">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.container.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.container.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.styles.jsx" afterDir="false" />
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="nothing important">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/shop/shop.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-loyalty/profile-loyalty.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/collection-item/collection-item.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-header/mobile-header.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-menu/mobile-menu.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-header/mobile-header.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/global.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/global.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/homepage/homepage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/homepage/homepage.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/homepage/homepage.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/homepage/homepage.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/shop/shop.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,14 +154,8 @@
       <workItem from="1586610494781" duration="21332000" />
       <workItem from="1586641680993" duration="838000" />
       <workItem from="1586687249222" duration="15561000" />
-      <workItem from="1586726281707" duration="13589000" />
-    </task>
-    <task id="LOCAL-00016" summary="optimized code view">
-      <created>1586212942674</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1586212942674</updated>
+      <workItem from="1586726281707" duration="16095000" />
+      <workItem from="1586806211869" duration="6770000" />
     </task>
     <task id="LOCAL-00017" summary="optimized code view">
       <created>1586213012404</created>
@@ -497,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586728190775</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="fixed personal information displaying when it equals 'null'">
+      <created>1586743582453</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1586743582453</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,8 +571,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added mobile view for collections and checkout" />
-    <MESSAGE value="added mobile view for cart dropdown" />
     <MESSAGE value="added facebook login button" />
     <MESSAGE value="added terms of use" />
     <MESSAGE value="added terms of use before registration" />
@@ -593,7 +594,9 @@
     <MESSAGE value="added sidebarHidden reducer" />
     <MESSAGE value="fixed mobile sidebar closing" />
     <MESSAGE value="added google analytics" />
-    <option name="LAST_COMMIT_MESSAGE" value="added google analytics" />
+    <MESSAGE value="fixed personal information displaying when it equals 'null'" />
+    <MESSAGE value="nothing important" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing important" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -648,10 +651,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586708210218">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586743584586">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586708210218" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586743584586" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

@@ -11,7 +11,7 @@ import {selectCartHidden} from "../../redux/cart/cart.selectors";
 import {
     HeaderContainer,
     LogoContainer,
-} from './mobile-menu.styles';
+} from './mobile-header.styles';
 
 
 const MobileHeader = ({hidden}) => (

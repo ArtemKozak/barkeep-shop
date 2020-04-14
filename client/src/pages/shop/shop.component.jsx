@@ -7,6 +7,8 @@ import {fetchCollectionsStart} from '../../redux/shop/shop.actions';
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
 import CollectionPageContainer from '../collection/collection.container';
 
+import {ShopPageDiv} from "./shop.styles";
+
 class ShopPage extends React.Component {
     componentDidMount() {
         const {fetchCollectionsStart} = this.props;
@@ -18,7 +20,7 @@ class ShopPage extends React.Component {
         const {match} = this.props;
 
         return (
-            <div className='shop-page'>
+            <ShopPageDiv className='shop-page'>
                 <Route
                     exact
                     path={`${match.path}`}
@@ -28,7 +30,7 @@ class ShopPage extends React.Component {
                     path={`${match.path}/:collectionId`}
                     component={CollectionPageContainer}
                 />
-            </div>
+            </ShopPageDiv>
         );
     }
 }

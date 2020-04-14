@@ -66,6 +66,10 @@ export const BackgroundImage = styled.div`
   background-position: center;
   margin-bottom: 5px;
   background-image: ${({imageUrl}) => `url(${imageUrl})`};
+  
+  @media screen and (max-width: 400px) {
+    height: 280px;
+  } 
 `;
 
 export const CollectionFooterContainer = styled.div`

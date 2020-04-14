@@ -13,7 +13,7 @@ import TermOfUsePage from "./pages/terms-of-use/terms-of-use.component";
 import ProfilePage from "./pages/profile/profile.component";
 
 import Header from './components/header/header.component';
-import MobileHeader from "./components/mobile-menu/mobile-menu.component";
+import MobileHeader from "./components/mobile-header/mobile-header.component";
 
 import {selectCurrentUser} from './redux/user/user.selectors';
 import {checkUserSession} from './redux/user/user.actions';

@@ -6,7 +6,6 @@ export const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
   background: black;
   z-index: 5;
   

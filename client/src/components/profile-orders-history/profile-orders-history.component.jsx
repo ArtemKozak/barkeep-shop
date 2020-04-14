@@ -9,8 +9,12 @@ import {
 
 const OrdersHistory = ({currentUser}) => (
     <PersonalInformationContainer>
-        <TitleContainer>Ну ты совсем ебобо?</TitleContainer>
-        <UserData label={"Сказали же"} otherText={["НЕ ОТКРЫВАЙ, так нет, тебе же интересно, иди делом займись"]} loyalty={true}/>
+        <TitleContainer>История Ваших заказов</TitleContainer>
+        <UserData
+            label={"Упс"}
+            otherText={["Кажется Вы еще у нас не заказывали... Может время сделать Ваш первый заказ?"]}
+            loyalty={true}
+        />
     </PersonalInformationContainer>
 );
 

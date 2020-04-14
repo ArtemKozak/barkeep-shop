@@ -10,7 +10,7 @@ const ProfileNavigation = ({toggleCartHidden}) => (
         <NavigationProfileLink to='/profile/loyalty/'>Бонусные баллы</NavigationProfileLink>
         <NavigationProfileLink as='div' onClick={toggleCartHidden}>Корзина</NavigationProfileLink>
         <NavigationProfileLink to='/profile/current-orders/'>Текущие заказы</NavigationProfileLink>
-        <NavigationProfileLink to='/profile/orders-history/'>Не открывай это</NavigationProfileLink>
+        <NavigationProfileLink to='/profile/orders-history/'>История заказов</NavigationProfileLink>
     </NavigationContainer>
 );
 
