@@ -1,4 +1,5 @@
 import firebase from 'firebase/app';
+import 'firebase/analytics';
 import 'firebase/firestore';
 import 'firebase/auth';
 
@@ -14,6 +15,7 @@ const config = {
 };
 
 firebase.initializeApp(config);
+firebase.analytics();
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
