@@ -26,7 +26,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added firebase analytics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/shop/shop.sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/shop/shop.sagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,14 +148,9 @@
       <workItem from="1586853065437" duration="8258000" />
       <workItem from="1586988410192" duration="331000" />
       <workItem from="1586989820866" duration="677000" />
-      <workItem from="1587038795772" duration="8018000" />
-    </task>
-    <task id="LOCAL-00019" summary="Stripe connecting">
-      <created>1586257568128</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1586257568128</updated>
+      <workItem from="1587038795772" duration="8123000" />
+      <workItem from="1587152864416" duration="2102000" />
+      <workItem from="1587159361266" duration="4489000" />
     </task>
     <task id="LOCAL-00020" summary="Stripe connecting">
       <created>1586258977108</created>
@@ -491,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586909218994</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="added firebase analytics">
+      <created>1587140335571</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1587140335572</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,9 +654,9 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="145" y="206" key="new project wizard/0.0.1536.960@0.0.1536.960" timestamp="1584621500790" />
-    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1586546933304">
+    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1587160965416">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1586546933304" />
+    <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1587160965416" />
   </component>
 </project>
