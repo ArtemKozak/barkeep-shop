@@ -24,9 +24,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added main image to homepage">
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added firebase analytics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/shop/shop.sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/shop/shop.sagas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,14 +143,10 @@
       <workItem from="1586687249222" duration="15561000" />
       <workItem from="1586726281707" duration="16095000" />
       <workItem from="1586806211869" duration="6842000" />
-      <workItem from="1586853065437" duration="8195000" />
-    </task>
-    <task id="LOCAL-00018" summary="Stripe connecting">
-      <created>1586256557373</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1586256557374</updated>
+      <workItem from="1586853065437" duration="8258000" />
+      <workItem from="1586988410192" duration="331000" />
+      <workItem from="1586989820866" duration="677000" />
+      <workItem from="1587038795772" duration="8018000" />
     </task>
     <task id="LOCAL-00019" summary="Stripe connecting">
       <created>1586257568128</created>
@@ -488,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586852621112</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="added firebase analytics">
+      <created>1586909218994</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1586909218994</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +562,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added terms of use" />
     <MESSAGE value="added terms of use before registration" />
     <MESSAGE value="added dropdown menu" />
     <MESSAGE value="added personal cabinet vertical menu" />
@@ -584,7 +586,8 @@
     <MESSAGE value="fixed personal information displaying when it equals 'null'" />
     <MESSAGE value="nothing important" />
     <MESSAGE value="added main image to homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="added main image to homepage" />
+    <MESSAGE value="added firebase analytics" />
+    <option name="LAST_COMMIT_MESSAGE" value="added firebase analytics" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -639,10 +642,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586852625625">
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2" timestamp="1586909222545">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586852625625" />
+    <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

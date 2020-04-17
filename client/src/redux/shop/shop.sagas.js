@@ -9,10 +9,10 @@ import ShopActionTypes from './shop.types';
 export function* fetchCollectionsAsync() {
     try {
         const collectionRef = firestore.collection('collections');
-        const snapshot = yield collectionRef.get();
+        const snapShot = yield collectionRef.get();
         const collectionsMap = yield call(
             convertCollectionsSnapshotToMap,
-            snapshot
+            snapShot
         );
         yield put(fetchCollectionsSuccess(collectionsMap));
     } catch (error) {
