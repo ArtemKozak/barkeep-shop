@@ -13,11 +13,6 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -25,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added firebase analytics">
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fsevents/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/dist/qs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/test/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +72,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="13.11.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,6 +154,7 @@
       <workItem from="1587038795772" duration="8123000" />
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
+      <workItem from="1590105604490" duration="861000" />
     </task>
     <task id="LOCAL-00020" summary="Stripe connecting">
       <created>1586258977108</created>
