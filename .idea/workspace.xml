@@ -19,36 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="added firebase analytics">
-      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="user can change his data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/root-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.actions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.reducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.selectors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/profile/profile.selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.types.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/sidebar/sidebar.types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/user/user.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/user/user.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/user/user.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/user/user.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/user/user.sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/user/user.sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/user/user.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/user/user.types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fsevents/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/dist/qs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stripe/node_modules/qs/test/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +148,7 @@
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
       <workItem from="1590105604490" duration="19570000" />
-      <workItem from="1590188855141" duration="246000" />
-    </task>
-    <task id="LOCAL-00021" summary="package changed">
-      <created>1586263296908</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1586263296908</updated>
+      <workItem from="1590188855141" duration="1321000" />
     </task>
     <task id="LOCAL-00022" summary="package changed">
       <created>1586263366972</created>
@@ -519,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590108634514</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="user can change his data">
+      <created>1590189496345</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1590189496347</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +564,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added terms of use before registration" />
     <MESSAGE value="added dropdown menu" />
     <MESSAGE value="added personal cabinet vertical menu" />
     <MESSAGE value="added labels at the personal cabinet" />
@@ -615,7 +588,8 @@
     <MESSAGE value="nothing important" />
     <MESSAGE value="added main image to homepage" />
     <MESSAGE value="added firebase analytics" />
-    <option name="LAST_COMMIT_MESSAGE" value="added firebase analytics" />
+    <MESSAGE value="user can change his data" />
+    <option name="LAST_COMMIT_MESSAGE" value="user can change his data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -670,11 +644,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590108689597">
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590189512423">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590108689597" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590189512423" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
