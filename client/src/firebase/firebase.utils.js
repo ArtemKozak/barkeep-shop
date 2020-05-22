@@ -27,7 +27,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!snapShot.exists) {
         const {uid, displayName, photoURL = '', email, emailVerified = false, phoneNumber = null, isAnonymous = false} = userAuth;
         const createdAt = new Date();
-        const address= null;
+        const address = null;
         const loyaltyPoints = 0;
         try {
             await userRef.set({
@@ -36,10 +36,10 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                 photoURL,
                 email,
                 emailVerified,
-                phoneNumbers: [phoneNumber],
+                phoneNumber,
                 isAnonymous,
                 createdAt,
-                addresses: [address],
+                address,
                 loyaltyPoints,
                 ...additionalData
             });
@@ -50,6 +50,17 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
     return userRef;
 };
+
+export const updateUserProfileDocument = async ({userAuth, displayName, email, phoneNumber, address}) => {
+    const userRef = firestore.doc(`users/${userAuth.uid}`);
+    console.log(userAuth)
+    await userRef.update({
+        displayName,
+        email,
+        phoneNumber,
+        address
+    });
+}
 
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
     const collectionRef = firestore.collection(collectionKey);

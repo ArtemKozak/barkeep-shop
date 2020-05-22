@@ -8,10 +8,19 @@ import {
     signOutFailure,
     signOutSuccess,
     signUpFailure,
-    signUpSuccess
+    signUpSuccess,
+    userUpdateSuccess,
+    userUpdateFailure
 } from './user.actions';
 
-import {auth, createUserProfileDocument, getCurrentUser, googleProvider, facebookProvider} from '../../firebase/firebase.utils';
+import {
+    auth,
+    createUserProfileDocument,
+    updateUserProfileDocument,
+    getCurrentUser,
+    googleProvider,
+    facebookProvider
+} from '../../firebase/firebase.utils';
 
 export function* getSnapshotFromUserAuth(userAuth, additionalData) {
     try {
@@ -82,6 +91,24 @@ export function* signUp({payload: {email, password, displayName}}) {
     }
 }
 
+export function* userUpdate({payload: {displayName, email, phoneNumber, address}}) {
+    try {
+        const userAuth = yield getCurrentUser();
+        if (!userAuth) return;
+        yield updateUserProfileDocument({
+            userAuth,
+            displayName,
+            email,
+            phoneNumber,
+            address
+        });
+        yield getSnapshotFromUserAuth(userAuth);
+        yield put(userUpdateSuccess());
+    } catch (error) {
+        yield put(userUpdateFailure(error));
+    }
+}
+
 export function* signInAfterSignUp({payload: {user, additionalData}}) {
     yield getSnapshotFromUserAuth(user, additionalData);
 }
@@ -114,6 +141,10 @@ export function* onSignUpSuccess() {
     yield takeLatest(UserActionTypes.SIGN_UP_SUCCESS, signInAfterSignUp);
 }
 
+export function* onUserUpdateStart() {
+    yield takeLatest(UserActionTypes.USER_UPDATE_START, userUpdate)
+}
+
 export function* userSagas() {
     yield all([
         call(onGoogleSignInStart),
@@ -122,6 +153,7 @@ export function* userSagas() {
         call(onCheckUserSession),
         call(onSignOutStart),
         call(onSignUpStart),
-        call(onSignUpSuccess)
+        call(onSignUpSuccess),
+        call(onUserUpdateStart)
     ]);
 }

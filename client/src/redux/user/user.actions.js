@@ -11,6 +11,20 @@ export const signInFailure = error => ({
     payload: error
 });
 
+export const userUpdateStart = userData => ({
+    type: UserActionTypes.USER_UPDATE_START,
+    payload: userData
+});
+
+export const userUpdateSuccess = () => ({
+    type: UserActionTypes.USER_UPDATE_SUCCESS
+});
+
+export const userUpdateFailure = error => ({
+    type: UserActionTypes.USER_UPDATE_FAILURE,
+    payload: error
+});
+
 export const googleSignInStart = () => ({
     type: UserActionTypes.GOOGLE_SIGN_IN_START
 });

@@ -38,11 +38,18 @@ const signAsInStyles = css`
   }
 `;
 
+const userProfileStyles = css`
+  ${buttonStyles}
+  margin-top: 40px;
+`;
+
 const getButtonStyles = props => {
     if (props.isGoogleSignIn || props.isFacebookSignIn) {
         return signAsInStyles;
     }
-
+    if (props.userProfile) {
+        return userProfileStyles;
+    }
     return props.inverted ? invertedButtonStyles : buttonStyles;
 };
 

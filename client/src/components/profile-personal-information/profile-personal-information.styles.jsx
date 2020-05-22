@@ -19,11 +19,21 @@ export const HeadContainer = styled.div`
   padding: 20px 20px;
 `;
 
+export const DataContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+`;
+
 export const ImageContainer = styled.div`
   width: 130px;
   height: 130px;
   border-radius: 100%;
   overflow: hidden;
+`;
+
+export const FormContainer = styled.form`
+  width: 80%;
 `;
 
 export const BackgroundImage = styled.div`
