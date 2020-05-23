@@ -37,7 +37,7 @@ const Header = ({currentUser, hidden, signOutStart}) => (
                         </CurrentUserContainer>
                         <SubMenuContainer>
                             <MenubarItemDropdown to='/profile/personal-information/'>Личные данные</MenubarItemDropdown>
-                            <MenubarItemDropdown to='/cart'>Корзина</MenubarItemDropdown>
+                            <MenubarItemDropdown to='/checkout'>Корзина</MenubarItemDropdown>
                             <MenubarItemDropdown as='div' onClick={signOutStart}>Выйти</MenubarItemDropdown>
                         </SubMenuContainer>
                     </MenuItemContainer>
