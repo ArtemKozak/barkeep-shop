@@ -11,12 +11,22 @@ export const CheckoutData = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const ItemsBlock = styled.div`
   width: 35%;
   display: flex;
   flex-direction: column;
+  
+  @media screen and (max-width: 800px) {
+    order: 1;
+    width: 95%;
+    align-self: center;
+  }
 `;
 
 export const CheckoutFormContainer = styled.form`
@@ -31,12 +41,23 @@ export const ItemsGroup = styled.div`
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  
+  @media screen and (max-width: 800px) {
+    background-color: rgb(12, 12, 12);
+     max-height: 62vh;
+  }
 `;
 
 export const UserDataBlock = styled.div`
   width: 65%;
   display: flex;
   flex-direction: column;
+  
+  @media screen and (max-width: 800px) {
+    order: 2;
+    width: 95%;
+    align-self: center;
+  }
 `;
 
 export const TotalContainer = styled.div`
@@ -56,6 +77,8 @@ export const CheckoutUserTitle = styled.div`
   
   @media screen and (max-width: 800px) {
     font-size: 18px;
+    margin-left: 0;
+    margin-top: 40px;
   }
 `;
 
@@ -65,6 +88,8 @@ export const CheckoutContactData = styled.div`
   padding: 20px 40px;
   
   @media screen and (max-width: 800px) {
+    margin: 0;
     font-size: 18px;
+    padding: 0;
   }
 `;

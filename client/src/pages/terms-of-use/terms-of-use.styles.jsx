@@ -16,6 +16,8 @@ export const TitleOfArticle = styled.div`
   font-size: 24px;
   margin: 25px 0;
   font-weight: bold;
+  
+  
 `;
 
 export const TitleOfParagraph = styled.div`

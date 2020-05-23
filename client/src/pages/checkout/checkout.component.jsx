@@ -16,7 +16,7 @@ import CheckoutDataBlockContainerPage from "../../components/checkout-data/check
 import {TitleOfArticle} from "../terms-of-use/terms-of-use.styles";
 
 
-const CheckoutPage = ({cartItems, total, currentUser}) => {
+const CheckoutPage = ({cartItems}) => {
     return (
         <CheckoutPageContainer>
             {
