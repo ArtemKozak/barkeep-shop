@@ -8,7 +8,8 @@ import {GlobalStyle} from './global.styles';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
-import CheckoutPage from './pages/checkout/checkout.component';
+import CartPage from './pages/cart/checkout.component';
+import CheckoutPage from "./pages/checkout/checkout.component";
 import TermOfUsePage from "./pages/terms-of-use/terms-of-use.component";
 import ProfilePage from "./pages/profile/profile.component";
 
@@ -40,6 +41,7 @@ class App extends React.Component {
                     <Route exact path='/' component={HomePage}/>
                     <Route path='/profile' component={ProfilePage}/>
                     <Route path='/shop' component={ShopPage}/>
+                    <Route exact path='/cart' component={CartPage}/>
                     <Route exact path='/checkout' component={CheckoutPage}/>
                     <Route exact path='/terms' component={TermOfUsePage}/>
                     <Route

@@ -29,34 +29,37 @@ export const CheckoutBlock = styled.div`
   min-height: 90vh;
 `;
 
-export const CheckoutData = styled.div`
+export const CheckoutHeaderContainer = styled.div`
   width: 100%;
-  min-height: 55vh;
-  display: flex;
-  flex-direction: row;
-`;
-
-export const ItemsBlock = styled.div`
-  width: 35%;
-  background-color: green;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const UserDataBlock = styled.div`
-  width: 65%;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
+  height: 1px;
+  border-bottom: 1px solid darkgrey;
 `;
 
 export const TotalContainer = styled.div`
   margin-top: 30px;
   margin-left: auto;
-  font-size: 22px;
+  font-size: 36px;
   
   @media screen and (max-width: 800px) {
-    font-size: 18px;
+    font-size: 26px;
+  }
+`;
+
+export const WarningContainer = styled.div`
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  color: red;
+`;
+
+export const EmptyMessage = styled.div`
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  color: grey;
+  
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+    color: rgb(120, 120, 120);
   }
 `;

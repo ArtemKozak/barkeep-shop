@@ -7,8 +7,16 @@ export function* clearCartOnSignOut() {
     yield put(clearCart());
 }
 
+export function* clearCartOnCheckout() {
+    yield put(clearCart());
+}
+
 export function* onSignOutSuccess() {
     yield takeLatest(UserActionTypes.SIGN_OUT_SUCCESS, clearCartOnSignOut);
+}
+
+export function* onCheckoutSuccess() {
+    yield takeLatest(UserActionTypes.SIGN_OUT_SUCCESS, clearCartOnCheckout);
 }
 
 export function* cartSagas() {
