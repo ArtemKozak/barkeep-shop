@@ -61,12 +61,14 @@ export const createUserOrderDocument = async (orderData) => {
     const cartItems = orderData.cartItems;
     const total = orderData.total;
     const createdAt = new Date();
+    const orderStatus = 0 // 0 - New order, 1 - Processed, 2 - Delivering, 3 - Received by customer
     try {
         await orderRef.doc().set({
             currentUser,
             cartItems,
             total,
             createdAt,
+            orderStatus
         });
     } catch (error) {
         console.log('error creating order', error.message);

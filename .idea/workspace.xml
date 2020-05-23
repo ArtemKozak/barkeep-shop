@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/terms-of-use/terms-of-use.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/terms-of-use/terms-of-use.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,14 +147,7 @@
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
       <workItem from="1590105604490" duration="19570000" />
-      <workItem from="1590188855141" duration="24199000" />
-    </task>
-    <task id="LOCAL-00025" summary="package changed">
-      <created>1586266302708</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1586266302708</updated>
+      <workItem from="1590188855141" duration="25167000" />
     </task>
     <task id="LOCAL-00026" summary="package changed">
       <created>1586266503348</created>
@@ -495,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590264393114</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="optimized mobile view">
+      <created>1590265968047</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1590265968047</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +563,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="small view fixing" />
     <MESSAGE value="added loyalty page" />
     <MESSAGE value=" small reducer changes" />
     <MESSAGE value="added UserData component" />
@@ -591,7 +587,8 @@
     <MESSAGE value="mobile view fixed" />
     <MESSAGE value="added new checkout page" />
     <MESSAGE value="loads orders to firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="loads orders to firebase" />
+    <MESSAGE value="optimized mobile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized mobile view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -606,11 +603,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590264392931">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590265967878">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590264392931" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590265967878" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

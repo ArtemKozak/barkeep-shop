@@ -33,7 +33,7 @@ export function* onSignOutSuccess() {
 }
 
 export function* onCheckoutSuccess() {
-    yield takeLatest(UserActionTypes.SIGN_OUT_SUCCESS, clearCartOnCheckout);
+    yield takeLatest(CartActionTypes.CREATE_NEW_ORDER_SUCCESS, clearCartOnCheckout);
 }
 
 export function* onCreateNewOrderStart() {
