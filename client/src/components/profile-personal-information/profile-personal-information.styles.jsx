@@ -34,6 +34,10 @@ export const ImageContainer = styled.div`
 
 export const FormContainer = styled.form`
   width: 80%;
+  
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const BackgroundImage = styled.div`

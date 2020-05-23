@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="user can change his data">
+    <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="heroku integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.styles.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
       <workItem from="1590105604490" duration="19570000" />
-      <workItem from="1590188855141" duration="1321000" />
+      <workItem from="1590188855141" duration="3786000" />
     </task>
     <task id="LOCAL-00022" summary="package changed">
       <created>1586263366972</created>
@@ -564,7 +563,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added dropdown menu" />
     <MESSAGE value="added personal cabinet vertical menu" />
     <MESSAGE value="added labels at the personal cabinet" />
     <MESSAGE value="added with spinner to the personal cabinet" />
@@ -589,7 +587,8 @@
     <MESSAGE value="added main image to homepage" />
     <MESSAGE value="added firebase analytics" />
     <MESSAGE value="user can change his data" />
-    <option name="LAST_COMMIT_MESSAGE" value="user can change his data" />
+    <MESSAGE value="heroku integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku integration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
