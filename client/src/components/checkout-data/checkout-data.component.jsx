@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {createStructuredSelector} from "reselect";
 
 import {
     CheckoutDataContainer,
@@ -15,23 +16,30 @@ import {
 import FormInputForData from "../form-input-for-data/form-input-for-data.component";
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import CustomButton from "../custom-button/custom-button.component";
-import {CheckoutBlock} from "../../pages/cart/checkout.styles";
+
+import {userUpdateStart} from "../../redux/user/user.actions";
+import {createNewOrderStart} from "../../redux/cart/cart.actions";
+import {connect} from "react-redux";
+import {selectCartItems, selectCartTotal} from "../../redux/cart/cart.selectors";
+import {selectCurrentUser} from "../../redux/user/user.selectors";
 
 
-const CheckoutDataBlock = ({cartItems, total, currentUser}) => {
+const CheckoutDataBlock = ({cartItems, total, currentUser, userUpdateStart, createNewOrderStart}) => {
     const [userCredentials, setCredentials] = useState({
+        uid: `${currentUser.uid}`,
         displayName: `${currentUser.displayName}`,
         email: `${currentUser.email}`,
         phoneNumber: `${currentUser.phoneNumber == null ? '' : currentUser.phoneNumber}`,
-        address: `${currentUser.address == null ? '' : currentUser.address}`
+        address: `${currentUser.address == null ? '' : currentUser.address}`,
     });
 
-    const {displayName, email, phoneNumber, address} = userCredentials;
+    const {uid, displayName, email, phoneNumber, address} = userCredentials;
 
     const handleSubmit = async event => {
         event.preventDefault();
-        // userUpdateStart(displayName, email, phoneNumber, address);
-        // toggleUpdateHidden();
+        userUpdateStart(displayName, email, phoneNumber, address);
+        const orderUserData = {uid, displayName, email, phoneNumber, address};
+        createNewOrderStart(orderUserData, cartItems, total);
     };
 
     const handleChange = event => {
@@ -98,4 +106,25 @@ const CheckoutDataBlock = ({cartItems, total, currentUser}) => {
     )
 };
 
-export default CheckoutDataBlock;
+const mapStateToProps = createStructuredSelector({
+    cartItems: selectCartItems,
+    total: selectCartTotal,
+    currentUser: selectCurrentUser
+});
+
+const mapDispatchToProps = dispatch => ({
+    userUpdateStart: (displayName, email, phoneNumber, address) => dispatch(userUpdateStart({
+        displayName,
+        email,
+        phoneNumber,
+        address
+    })),
+    createNewOrderStart: (orderUserData, cartItems, total) => dispatch(createNewOrderStart({
+        orderUserData, cartItems, total
+    }))
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(CheckoutDataBlock);

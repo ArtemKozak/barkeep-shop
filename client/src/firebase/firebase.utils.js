@@ -51,9 +51,30 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     return userRef;
 };
 
+export const createUserOrderDocument = async (orderData) => {
+    if (!orderData) return;
+
+    console.log(orderData)
+    const orderRef = firestore.collection(`users/${orderData.orderUserData.uid}/orders`);
+
+    const currentUser = orderData.orderUserData;
+    const cartItems = orderData.cartItems;
+    const total = orderData.total;
+    const createdAt = new Date();
+    try {
+        await orderRef.doc().set({
+            currentUser,
+            cartItems,
+            total,
+            createdAt,
+        });
+    } catch (error) {
+        console.log('error creating order', error.message);
+    }
+};
+
 export const updateUserProfileDocument = async ({userAuth, displayName, email, phoneNumber, address}) => {
     const userRef = firestore.doc(`users/${userAuth.uid}`);
-    console.log(userAuth)
     await userRef.update({
         displayName,
         email,

@@ -1,7 +1,9 @@
 import {all, call, takeLatest, put} from 'redux-saga/effects';
 
 import UserActionTypes from '../user/user.types';
-import {clearCart} from './cart.actions';
+import CartActionTypes from "./cart.types";
+import {clearCart, createNewOrderFailure, createNewOrderSuccess} from './cart.actions';
+import {createUserOrderDocument} from "../../firebase/firebase.utils";
 
 export function* clearCartOnSignOut() {
     yield put(clearCart());
@@ -9,6 +11,21 @@ export function* clearCartOnSignOut() {
 
 export function* clearCartOnCheckout() {
     yield put(clearCart());
+}
+
+export function* createNewOrder({payload: {orderUserData, cartItems, total}}) {
+    try {
+        console.log(orderUserData)
+        if (!orderUserData) return;
+        yield createUserOrderDocument({
+            orderUserData,
+            cartItems,
+            total
+        });
+        yield put(createNewOrderSuccess());
+    } catch (error) {
+        yield put(createNewOrderFailure(error));
+    }
 }
 
 export function* onSignOutSuccess() {
@@ -19,6 +36,14 @@ export function* onCheckoutSuccess() {
     yield takeLatest(UserActionTypes.SIGN_OUT_SUCCESS, clearCartOnCheckout);
 }
 
+export function* onCreateNewOrderStart() {
+    yield takeLatest(CartActionTypes.CREATE_NEW_ORDER_START, createNewOrder);
+}
+
 export function* cartSagas() {
-    yield all([call(onSignOutSuccess)]);
+    yield all([
+        call(onSignOutSuccess),
+        call(onCheckoutSuccess),
+        call(onCreateNewOrderStart),
+    ]);
 }

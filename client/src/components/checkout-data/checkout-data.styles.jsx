@@ -27,6 +27,10 @@ export const ItemsGroup = styled.div`
   padding: 10px;
   max-height: 440px;
   overflow: scroll;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
 `;
 
 export const UserDataBlock = styled.div`
