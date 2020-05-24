@@ -116,6 +116,27 @@ export const convertCollectionsSnapshotToMap = collections => {
     }, {});
 };
 
+export const convertUserOrdersSnapshotToMap = userOrders => {
+    const transformedUserOrders = userOrders.docs.map(doc => {
+        const {cartItems, createdAt, currentUser, orderStatus, total} = doc.data();
+
+        return {
+            routeName: encodeURI(doc.id),
+            id: doc.id,
+            cartItems,
+            createdAt,
+            currentUser,
+            orderStatus,
+            total,
+        };
+    });
+
+    return transformedUserOrders.reduce((accumulator, userOrder) => {
+        accumulator[userOrder.id] = userOrder;
+        return accumulator;
+    }, {});
+};
+
 export const getCurrentUser = () => {
     return new Promise((resolve, reject) => {
         const unsubscribe = auth.onAuthStateChanged(userAuth => {

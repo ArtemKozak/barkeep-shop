@@ -11,12 +11,14 @@ const OrdersHistoryWithSpinner = WithSpinner(OrdersHistory);
 
 const OrdersHistoryContainerPage = ({currentUser}) => (
     <ProfileDataContainer>
-        <OrdersHistoryWithSpinner isLoading={!currentUser} currentUser={currentUser}/>
+        <OrdersHistoryWithSpinner
+            isLoading={!currentUser}
+        />
     </ProfileDataContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
-    currentUser: selectCurrentUser
+    currentUser: selectCurrentUser,
 });
 
 export default connect(
