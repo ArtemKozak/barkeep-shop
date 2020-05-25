@@ -14,3 +14,8 @@ export const fetchUserOrdersFailure = errorMessage => ({
     type: OrdersActionTypes.FETCH_USER_ORDERS_FAILURE,
     payload: errorMessage
 });
+
+export const setOrderHidden = orderId => ({
+    type: OrdersActionTypes.SET_ORDER_HIDDEN,
+    payload: orderId
+})

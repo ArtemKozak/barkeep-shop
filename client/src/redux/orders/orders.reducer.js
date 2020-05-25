@@ -3,11 +3,17 @@ import OrdersActionTypes from './orders.types';
 const INITIAL_STATE = {
     userOrders: null,
     isFetching: false,
-    errorMessage: undefined
+    errorMessage: undefined,
+    selected: null,
 };
 
 const ordersReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
+        case OrdersActionTypes.SET_ORDER_HIDDEN:
+            return {
+                ...state,
+                selected: action.payload,
+            }
         case OrdersActionTypes.FETCH_USER_ORDERS_START:
             return {
                 ...state,

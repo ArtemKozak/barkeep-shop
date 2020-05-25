@@ -1,5 +1,4 @@
 import {createSelector} from 'reselect';
-import {selectCartItems} from "../cart/cart.selectors";
 
 const selectOrders = state => state.orders;
 
@@ -36,4 +35,9 @@ export const selectIsUserOrderFetching = createSelector(
 export const selectIsUserOrdersLoaded = createSelector(
     [selectOrders],
     orders => !!orders.userOrders
+);
+
+export const selectOrderHidden = createSelector(
+    [selectOrders],
+    orders => orders.selected
 );

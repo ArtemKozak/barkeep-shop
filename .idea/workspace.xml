@@ -20,24 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/menu-item/menu-item.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/order-item/order-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item/order-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/order-item/order-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item/order-item.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.container.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-current-orders/profile-current-orders.styles.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/cart/cart.sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/cart/cart.sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/cart/cart.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/cart/cart.selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.types.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +153,7 @@
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
       <workItem from="1590105604490" duration="19570000" />
-      <workItem from="1590188855141" duration="61860000" />
-    </task>
-    <task id="LOCAL-00029" summary="yarn install">
-      <created>1586268047835</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1586268047835</updated>
+      <workItem from="1590188855141" duration="67957000" />
     </task>
     <task id="LOCAL-00030" summary="fixing server dev">
       <created>1586285786951</created>
@@ -508,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590350551871</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="fixed orders history, added mobile view">
+      <created>1590418814996</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1590418814996</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +569,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added auto generated key to UserData map" />
     <MESSAGE value="added button if there is no text in field" />
     <MESSAGE value="new props for button" />
     <MESSAGE value="added new mobile menu" />
@@ -604,7 +593,8 @@
     <MESSAGE value="clear cart on checkout" />
     <MESSAGE value="connect checkout to cart" />
     <MESSAGE value="displaying orders history from firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying orders history from firebase" />
+    <MESSAGE value="fixed orders history, added mobile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed orders history, added mobile view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -619,11 +609,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590350551677">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590418814782">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590350551677" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590418814782" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>

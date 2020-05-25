@@ -1,4 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {createStructuredSelector} from "reselect";
+import {connect} from "react-redux";
+
+import {selectOrderHidden} from "../../redux/orders/orders.selectors";
+import {setOrderHidden} from "../../redux/orders/orders.actions";
 
 import {
     OrderItemListContainer,
@@ -11,7 +16,9 @@ import {
     ItemImage,
     StatusText,
     Array,
-    OrderItemContainer
+    OrderPreview,
+    OrderPreviewItem,
+    OrderItemContainer,
 } from './order-item-list.styles'
 
 const options = {
@@ -25,21 +32,30 @@ const options = {
     timezone: 'UTC'
 };
 
-const OrderItemList = ({cartItems, createdAt, orderStatus, total}) => {
+const OrderItemList = ({orderId, cartItems, createdAt, orderStatus, total, setOrderHidden, orderIsOpen}) => {
     const quantity = cartItems.reduce((accumulatedQuantity, cartItem) =>
         accumulatedQuantity + cartItem.quantity, 0);
 
+
+    const handleClick = (orderIsOpen, orderId) => {
+        orderIsOpen === orderId ? setOrderHidden(null) : setOrderHidden(orderId);
+    }
+
     const declOfNum = (number, titles) => {
         const cases = [2, 0, 1, 1, 1, 2];
-        return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+        return titles[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
     }
+
 
     return (
         <OrderItemListContainer>
             <OrderHead>
                 <ArrayWithDetails>
-                    <Array>
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <Array onClick={() => handleClick(orderIsOpen, orderId)}>
+                        <svg className={orderIsOpen === orderId ? 'opened' : ''}
+                             width="30" height="30"
+                             viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.41 8.59L12 13.17L16.59 8.59L18 10L12 16L6 10L7.41 8.59Z" fill="#263238"/>
                         </svg>
                     </Array>
@@ -76,8 +92,25 @@ const OrderItemList = ({cartItems, createdAt, orderStatus, total}) => {
                     </OrderItemContainer>
                 )}
             </OrderItemListItems>
+            <OrderPreview className={orderIsOpen === orderId ? 'opened' : ''}>
+                {cartItems.map(({id, name, quantity, price}) =>
+                    <OrderPreviewItem key={id}>
+                        <p>{name} - {quantity} шт. по {price} грн</p>
+                    </OrderPreviewItem>
+                )}
+            </OrderPreview>
         </OrderItemListContainer>)
 };
 
+const mapStateToProps = createStructuredSelector({
+    orderIsOpen: selectOrderHidden,
+});
 
-export default OrderItemList;
+const mapDispatchToProps = dispatch => ({
+    setOrderHidden: orderId => dispatch(setOrderHidden(orderId))
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(OrderItemList);

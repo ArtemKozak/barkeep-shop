@@ -109,7 +109,16 @@ export const Array = styled.div`
   flex-direction: column;
   border: 1px solid rgb(230, 230, 230);
   border-radius: 2px;
+  transition: 0.5s ease;
   
+  svg {
+    transition: 0.5s ease;
+    
+    &.opened {
+      transform: rotate(-180deg);
+      transition: 0.5s ease;
+    } 
+  }
   
   @media screen and (max-width: 800px) {
     svg {
@@ -126,6 +135,35 @@ export const OrderItemListItems = styled.div`
   display: flex;
   flex-direction: row;
   align-items: start;
+`;
+
+export const OrderPreview = styled.div`
+  width: 100%;
+  padding: 0 10px;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  transition: 0.5s ease;
+  
+    
+  &.opened {
+    display: flex;
+    transition: 0.5s ease;
+  }
+`;
+
+
+export const OrderPreviewItem = styled.div`
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: 0.5s ease;
+  
+  p {
+    margin: 0px 5px;
+  }
 `;
 
 export const OrderItemContainer = styled.div`

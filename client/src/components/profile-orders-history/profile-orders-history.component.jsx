@@ -30,7 +30,7 @@ class OrdersHistory extends React.Component {
                         this.props.userOrders
                             .sort((a, b) => b.createdAt.seconds - a.createdAt.seconds)
                             .map(({id, ...otherOrderProps}) => (
-                                <OrderItemList key={id} {...otherOrderProps}/>
+                                <OrderItemList key={id} orderId={id} {...otherOrderProps}/>
                             ))
                     ) : (
                         <UserData
