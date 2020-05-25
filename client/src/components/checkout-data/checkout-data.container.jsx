@@ -10,7 +10,7 @@ import {CheckoutDataContainer} from "./checkout-data.styles";
 
 const CheckoutDataBlockWithSpinner = WithSpinner(CheckoutDataBlock);
 
-const CheckoutDataBlockContainerPage = ({currentUser, cartItems, total}) => (
+const CheckoutDataBlockContainerPage = ({currentUser}) => (
     <CheckoutDataContainer>
         <CheckoutDataBlockWithSpinner isLoading={!currentUser} currentUser={currentUser}/>
     </CheckoutDataContainer>

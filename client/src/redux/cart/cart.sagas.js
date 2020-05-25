@@ -15,7 +15,6 @@ export function* clearCartOnCheckout() {
 
 export function* createNewOrder({payload: {orderUserData, cartItems, total}}) {
     try {
-        console.log(orderUserData)
         if (!orderUserData) return;
         yield createUserOrderDocument({
             orderUserData,

@@ -1,23 +1,28 @@
 import styled from 'styled-components';
 
 export const OrderItemContainer = styled.div`
-  width: 90%;
+  width: 100px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid black;
+  margin-right: 15px;
+  
+  @media screen and (max-width: 800px) {  
+    width: 50px;
+    height: 50px;
+  }
 `;
 
-export const OrderItemTitles = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`;
 
-export const ItemTitle = styled.div`
+export const ItemImage = styled.div` 
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-image: ${({imageUrl}) => `url(${imageUrl})`};
   display: flex;
-  width: 100%;
-  margin: 10px 10px 10px 10px;
+  
+  @media screen and (max-width: 800px) {  
+    width: 50px;
+    height: 50px;
+  }
 `;

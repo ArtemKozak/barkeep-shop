@@ -1,4 +1,5 @@
 import {createSelector} from 'reselect';
+import {selectCartItems} from "../cart/cart.selectors";
 
 const selectOrders = state => state.orders;
 
@@ -13,8 +14,18 @@ export const selectUserOrdersForPreview = createSelector(
 );
 
 export const selectUserOrder = userOrderUrlParam => createSelector(
-    [selectOrders],
+    [selectUserOrders],
     userOrders => (userOrders ? userOrders[userOrderUrlParam] : null)
+);
+
+export const selectOrderItemsCount = createSelector(
+    [selectUserOrders],
+    orderItems =>
+        orderItems.reduce(
+            (accumulatedQuantity, orderItem) =>
+                accumulatedQuantity + orderItem.quantity,
+            0
+        )
 );
 
 export const selectIsUserOrderFetching = createSelector(

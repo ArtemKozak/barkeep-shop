@@ -12,7 +12,7 @@ import {
     PersonalInformationContainer,
     TitleContainer
 } from '../profile-personal-information/profile-personal-information.styles';
-import OrderItem from "../order-item/order-item.component";
+import OrderItemList from "../order-item-list/order-item-list.component";
 
 class OrdersHistory extends React.Component {
     componentDidMount() {
@@ -27,9 +27,11 @@ class OrdersHistory extends React.Component {
                 <TitleContainer>История Ваших заказов</TitleContainer>
                 {
                     this.props.userOrders ? (
-                        this.props.userOrders.map(({id, ...otherOrderProps}) => (
-                            <OrderItem key={id} {...otherOrderProps}/>
-                        ))
+                        this.props.userOrders
+                            .sort((a, b) => b.createdAt.seconds - a.createdAt.seconds)
+                            .map(({id, ...otherOrderProps}) => (
+                                <OrderItemList key={id} {...otherOrderProps}/>
+                            ))
                     ) : (
                         <UserData
                             label={"Упс"}

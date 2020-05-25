@@ -8,7 +8,6 @@ const ProfileNavigation = ({toggleCartHidden}) => (
     <NavigationContainer>
         <NavigationProfileLink to='/profile/personal-information/'>Главная</NavigationProfileLink>
         <NavigationProfileLink to='/profile/loyalty/'>Бонусные баллы</NavigationProfileLink>
-        <NavigationProfileLink to='/profile/current-orders/'>Текущие заказы</NavigationProfileLink>
         <NavigationProfileLink to='/profile/orders-history/'>История заказов</NavigationProfileLink>
     </NavigationContainer>
 );

@@ -20,11 +20,11 @@ import CustomButton from "../custom-button/custom-button.component";
 import {userUpdateStart} from "../../redux/user/user.actions";
 import {createNewOrderStart} from "../../redux/cart/cart.actions";
 import {connect} from "react-redux";
-import {selectCartItems, selectCartTotal} from "../../redux/cart/cart.selectors";
+import {selectCartItems, selectCartItemsCount, selectCartTotal} from "../../redux/cart/cart.selectors";
 import {selectCurrentUser} from "../../redux/user/user.selectors";
 
 
-const CheckoutDataBlock = ({cartItems, total, currentUser, userUpdateStart, createNewOrderStart}) => {
+const CheckoutDataBlock = ({cartItems, total, currentUser, itemsCount, userUpdateStart, createNewOrderStart}) => {
     const [userCredentials, setCredentials] = useState({
         uid: `${currentUser.uid}`,
         displayName: `${currentUser.displayName}`,
@@ -39,7 +39,7 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, userUpdateStart, crea
         event.preventDefault();
         userUpdateStart(displayName, email, phoneNumber, address);
         const orderUserData = {uid, displayName, email, phoneNumber, address};
-        createNewOrderStart(orderUserData, cartItems, total);
+        createNewOrderStart(orderUserData, cartItems, total, itemsCount);
     };
 
     const handleChange = event => {
@@ -109,7 +109,8 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, userUpdateStart, crea
 const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems,
     total: selectCartTotal,
-    currentUser: selectCurrentUser
+    currentUser: selectCurrentUser,
+    itemsCount: selectCartItemsCount
 });
 
 const mapDispatchToProps = dispatch => ({

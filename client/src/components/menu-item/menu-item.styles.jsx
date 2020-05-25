@@ -25,7 +25,7 @@ export const MenuItemContainer = styled.div`
 		}
 	}
 
-	&:first-child {
+  &:first-child {
     margin-right: 7.5px;
   }
 
