@@ -43,12 +43,33 @@ const userProfileStyles = css`
   margin-top: 40px;
 `;
 
+const adminUserProfileRedStyles = css`
+  ${buttonStyles}
+  background-color: rgb(255, 71, 0);
+  margin-left: 5px;
+`;
+
+const adminUserProfileGreenStyles = css`
+  ${buttonStyles}
+  background-color: #00BF60;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 16px;
+`;
+
 const getButtonStyles = props => {
     if (props.isGoogleSignIn || props.isFacebookSignIn) {
         return signAsInStyles;
     }
     if (props.userProfile) {
         return userProfileStyles;
+    }
+    if (props.adminUserProfileRed) {
+        return adminUserProfileRedStyles;
+    }
+    if (props.adminUserProfileGreen) {
+        return adminUserProfileGreenStyles;
     }
     return props.inverted ? invertedButtonStyles : buttonStyles;
 };

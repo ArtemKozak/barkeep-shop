@@ -1,10 +1,8 @@
 import React from "react";
 
 import {NavigationContainer, NavigationProfileLink} from './profile-navigation.styles';
-import {toggleCartHidden} from "../../redux/cart/cart.actions";
-import {connect} from "react-redux";
 
-const ProfileNavigation = ({toggleCartHidden}) => (
+const ProfileNavigation = () => (
     <NavigationContainer>
         <NavigationProfileLink to='/profile/personal-information/'>Главная</NavigationProfileLink>
         <NavigationProfileLink to='/profile/loyalty/'>Бонусные баллы</NavigationProfileLink>
@@ -12,11 +10,4 @@ const ProfileNavigation = ({toggleCartHidden}) => (
     </NavigationContainer>
 );
 
-const mapDispatchToProps = dispatch => ({
-    toggleCartHidden: () => dispatch(toggleCartHidden())
-});
-
-export default connect(
-    null,
-    mapDispatchToProps
-)(ProfileNavigation);
+export default ProfileNavigation;

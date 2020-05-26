@@ -25,7 +25,7 @@ const PersonalInformation = ({currentUser, userUpdateStart, toggleUpdateHidden, 
     const [userCredentials, setCredentials] = useState({
         displayName: `${currentUser.displayName}`,
         email: `${currentUser.email}`,
-        phoneNumber: `${currentUser.phoneNumber == null ? '' : currentUser.phoneNumber}`,
+        phoneNumber: `${currentUser.phoneNumber == null ? '+380' : currentUser.phoneNumber}`,
         address: `${currentUser.address == null ? '' : currentUser.address}`
     });
 
@@ -88,7 +88,7 @@ const PersonalInformation = ({currentUser, userUpdateStart, toggleUpdateHidden, 
                                 value={email}
                                 handleChange={handleChange}
                                 label='Эл. почта'
-                                required
+                                disabled
                             />
                             <FormInput
                                 name='phoneNumber'

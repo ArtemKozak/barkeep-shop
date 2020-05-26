@@ -35,7 +35,13 @@ const Header = ({currentUser, hidden, signOutStart}) => (
                         <CurrentUserContainer>
                             Здравствуйте, {currentUser.displayName}
                         </CurrentUserContainer>
-                        <SubMenuContainer>
+                        <SubMenuContainer>{
+                            currentUser.uid === 'JOZY7zzZx9fsgna5BBGWuIIJHzi2' ? (
+                                <MenubarItemDropdown to='/administrator_page_for_user_orders_and_other/'>Я
+                                    администратор</MenubarItemDropdown>
+
+                            ) : null
+                        }
                             <MenubarItemDropdown to='/profile/personal-information/'>Личные данные</MenubarItemDropdown>
                             <MenubarItemDropdown to='/checkout'>Корзина</MenubarItemDropdown>
                             <MenubarItemDropdown as='div' onClick={signOutStart}>Выйти</MenubarItemDropdown>

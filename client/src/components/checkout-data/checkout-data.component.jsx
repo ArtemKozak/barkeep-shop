@@ -29,7 +29,7 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, itemsCount, userUpdat
         uid: `${currentUser.uid}`,
         displayName: `${currentUser.displayName}`,
         email: `${currentUser.email}`,
-        phoneNumber: `${currentUser.phoneNumber == null ? '' : currentUser.phoneNumber}`,
+        phoneNumber: `${currentUser.phoneNumber == null ? '+380' : currentUser.phoneNumber}`,
         address: `${currentUser.address == null ? '' : currentUser.address}`,
     });
 
@@ -71,7 +71,7 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, itemsCount, userUpdat
                                 handleChange={handleChange}
                                 value={email}
                                 label='Электронная почта'
-                                required
+                                disabled
                             />
                             <FormInputForData
                                 name='phoneNumber'

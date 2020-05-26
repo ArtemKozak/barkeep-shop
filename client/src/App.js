@@ -18,6 +18,7 @@ import MobileHeader from "./components/mobile-header/mobile-header.component";
 
 import {selectCurrentUser} from './redux/user/user.selectors';
 import {checkUserSession} from './redux/user/user.actions';
+import AdminPage from "./pages/admin/admin.component";
 
 class App extends React.Component {
     unsubscribeFromAuth = null;
@@ -39,6 +40,14 @@ class App extends React.Component {
                 <MobileHeader/>
                 <Switch>
                     <Route exact path='/' component={HomePage}/>
+                    <Route exact path='/administrator_page_for_user_orders_and_other' render={() =>
+                        this.props.currentUser && this.props.currentUser.uid === 'JOZY7zzZx9fsgna5BBGWuIIJHzi2' ? (
+                            <AdminPage/>
+                        ) : (
+                            null
+                            // <Redirect to='/'/>
+                        )}
+                    />
                     <Route path='/profile' component={ProfilePage}/>
                     <Route path='/shop' component={ShopPage}/>
                     <Route exact path='/cart' component={CartPage}/>

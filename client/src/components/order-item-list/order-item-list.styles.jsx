@@ -75,6 +75,10 @@ export const StatusText = styled.div`
     background: #FFA000;
   }
   
+  &.red {
+    background: #ff3f00;
+  }
+  
   &.gray {
     background: #b4b4b4;
   }

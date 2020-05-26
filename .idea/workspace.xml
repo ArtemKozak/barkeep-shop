@@ -20,14 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-navigation/admin-navigation.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-navigation/admin-navigation.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/checkout-fixed-item/checkout-fixed-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/checkout-fixed-item/checkout-fixed-item.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/orders/orders.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/orders/orders.types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +85,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/order-item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/admin-navigation" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -96,11 +105,11 @@
       <recent name="$PROJECT_DIR$/src/pages/checkout" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/admin-navigation" />
+      <recent name="$PROJECT_DIR$/client/src/components/checkout-fixed-item" />
       <recent name="$PROJECT_DIR$/client/src/components/order-item" />
       <recent name="$PROJECT_DIR$/client/src/redux/orders" />
       <recent name="$PROJECT_DIR$/client/src/pages/checkout" />
-      <recent name="$PROJECT_DIR$/client/src/redux/profile" />
-      <recent name="$PROJECT_DIR$/client/src/pages/profile" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -153,14 +162,7 @@
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
       <workItem from="1590105604490" duration="19570000" />
-      <workItem from="1590188855141" duration="67957000" />
-    </task>
-    <task id="LOCAL-00030" summary="fixing server dev">
-      <created>1586285786951</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1586285786951</updated>
+      <workItem from="1590188855141" duration="85212000" />
     </task>
     <task id="LOCAL-00031" summary="fixing server dev">
       <created>1586286262783</created>
@@ -498,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590418814996</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="added order description dropdown">
+      <created>1590426064858</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1590426064858</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +578,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added button if there is no text in field" />
     <MESSAGE value="new props for button" />
     <MESSAGE value="added new mobile menu" />
     <MESSAGE value="mobile menu styled in jsx" />
@@ -594,7 +602,8 @@
     <MESSAGE value="connect checkout to cart" />
     <MESSAGE value="displaying orders history from firebase" />
     <MESSAGE value="fixed orders history, added mobile view" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed orders history, added mobile view" />
+    <MESSAGE value="added order description dropdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="added order description dropdown" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -609,11 +618,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590418814782">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590426064670">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590418814782" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590426064670" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -660,10 +669,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="145" y="206" key="new project wizard/0.0.1536.960@0.0.1536.960" timestamp="1584621500790" />
-    <state x="259" y="197" width="782" height="789" key="search.everywhere.popup" timestamp="1590401643901">
+    <state x="259" y="197" width="782" height="789" key="search.everywhere.popup" timestamp="1590453223064">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="222" y="169" width="670" height="676" key="search.everywhere.popup/0.0.1536.960@0.0.1536.960" timestamp="1587160965416" />
-    <state x="259" y="197" width="782" height="789" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590401643901" />
+    <state x="259" y="197" width="782" height="789" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1590453223064" />
   </component>
 </project>

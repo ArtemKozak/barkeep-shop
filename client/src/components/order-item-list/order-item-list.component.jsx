@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 
 import {selectOrderHidden} from "../../redux/orders/orders.selectors";
 import {setOrderHidden} from "../../redux/orders/orders.actions";
+import OrderFixedItem from "../checkout-fixed-item/checkout-fixed-item.component";
 
 import {
     OrderItemListContainer,
@@ -20,6 +21,7 @@ import {
     OrderPreviewItem,
     OrderItemContainer,
 } from './order-item-list.styles'
+import CheckoutItem from "../checkout-item/checkout-item.component";
 
 const options = {
     weekday: 'short',
@@ -93,10 +95,11 @@ const OrderItemList = ({orderId, cartItems, createdAt, orderStatus, total, setOr
                 )}
             </OrderItemListItems>
             <OrderPreview className={orderIsOpen === orderId ? 'opened' : ''}>
-                {cartItems.map(({id, name, quantity, price}) =>
-                    <OrderPreviewItem key={id}>
-                        <p>{name} - {quantity} шт. по {price} грн</p>
-                    </OrderPreviewItem>
+                {cartItems.map((cartItem) =>
+                    <OrderFixedItem key={cartItem.id} cartItem={cartItem}/>
+                    // <OrderPreviewItem key={id}>
+                    //     <p>{name} - {quantity} шт. по {price} грн</p>
+                    // </OrderPreviewItem>
                 )}
             </OrderPreview>
         </OrderItemListContainer>)
