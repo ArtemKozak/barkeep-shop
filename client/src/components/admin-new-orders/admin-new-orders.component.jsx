@@ -28,9 +28,11 @@ import UserData from "../profile-data-container/profile-data-container.component
 import OrderFixedItem from "../checkout-fixed-item/checkout-fixed-item.component";
 import {TotalContainer} from "../checkout-data/checkout-data.styles";
 import {selectOrdersForPreview, selectUsersForPreview} from "../../redux/admin/admin.selectors";
+import {AdminGetOrdersStart, AdminUpdateOrderStatusStart} from "../../redux/admin/admin.actions";
 
 
-const AdminNewOrders = ({orderProps, userUpdateStart, toggleUpdateHidden, profileUpdateHidden, allUsers}) => {
+const AdminNewOrders = ({orderId, orderProps, userUpdateStart, toggleUpdateHidden, profileUpdateHidden,
+                            allUsers, AdminUpdateOrderStatusStart, AdminGetOrdersStart}) => {
     const [userCredentials, setCredentials] = useState({
         displayName: `${orderProps.currentUser.displayName}`,
         email: `${orderProps.currentUser.email}`,
@@ -52,13 +54,23 @@ const AdminNewOrders = ({orderProps, userUpdateStart, toggleUpdateHidden, profil
         setCredentials({...userCredentials, [name]: value});
     };
 
+    const IncreaseStatus = async event => {
+        AdminUpdateOrderStatusStart(orderProps.currentUser.uid, orderId, orderProps.orderStatus + 1);
+        AdminGetOrdersStart();
+    };
+
+    const DecreaseStatus = async event => {
+        AdminUpdateOrderStatusStart(orderProps.currentUser.uid, orderId, orderProps.orderStatus - 1);
+        AdminGetOrdersStart();
+    };
+
     return (
         <AdminOrderContainer>
             <UserInformation>
                 <AdminImageAndStatus>
                     <AdminOrderStatusContainer>
                         {
-                            orderProps.orderStatus === -1 ? (
+                            orderProps.orderStatus <= -1 ? (
                                 <StatusText className={'red'}>Отменен</StatusText>
                             ) : orderProps.orderStatus === 0 ? (
                                 <StatusText className={'orange'}>Новый заказ</StatusText>
@@ -84,8 +96,8 @@ const AdminNewOrders = ({orderProps, userUpdateStart, toggleUpdateHidden, profil
                         </TotalContainer>
                     </TotalContainer>
                     <AdminOrderControlButtons>
-                        <CustomButton type='button' adminUserProfileRed>ОКЛОНИТЬ</CustomButton>
-                        <CustomButton type='button' adminUserProfileGreen>Дальше</CustomButton>
+                        <CustomButton type='button' onClick={DecreaseStatus} adminUserProfileRed>ОКЛОНИТЬ</CustomButton>
+                        <CustomButton type='button' onClick={IncreaseStatus} adminUserProfileGreen>Дальше</CustomButton>
                     </AdminOrderControlButtons>
                 </AdminImageAndStatus>
                 {
@@ -184,7 +196,13 @@ const mapDispatchToProps = dispatch => ({
         email,
         phoneNumber,
         address
-    }))
+    })),
+    AdminUpdateOrderStatusStart: (userId, orderId, orderStatus) => dispatch(AdminUpdateOrderStatusStart({
+        userId,
+        orderId,
+        orderStatus
+    })),
+    AdminGetOrdersStart: () => dispatch(AdminGetOrdersStart())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(AdminNewOrders);

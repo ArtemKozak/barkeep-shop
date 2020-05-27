@@ -4,11 +4,17 @@ import {
 } from 'redux-saga/effects';
 
 import AdminActionTypes from "./admin.types";
-import {AdminGetUserSuccess, AdminGetUserFailure, AdminGetOrdersSuccess, AdminGetOrdersFailure} from "./admin.actions";
+import {
+    AdminGetUserSuccess,
+    AdminGetUserFailure,
+    AdminGetOrdersSuccess,
+    AdminGetOrdersFailure,
+    AdminUpdateOrderStatusSuccess, AdminUpdateOrderStatusFailure
+} from "./admin.actions";
 import {
     firestore,
     convertUsersSnapshotToMap,
-    convertAdminUsersOrdersSnapshotToMap
+    convertAdminUsersOrdersSnapshotToMap, updateAdminUserStatusDocument
 } from '../../firebase/firebase.utils';
 
 
@@ -40,6 +46,15 @@ export function* AdminGetAllOrders() {
     }
 }
 
+export function* AdminUpdateOrderStatus({payload: {userId, orderId, orderStatus}}) {
+    try {
+        yield updateAdminUserStatusDocument({userId, orderId, orderStatus});
+        yield put(AdminUpdateOrderStatusSuccess())
+    } catch (error) {
+        yield put(AdminUpdateOrderStatusFailure(error))
+    }
+}
+
 
 export function* onAdminGetUser() {
     yield takeLatest(
@@ -48,10 +63,17 @@ export function* onAdminGetUser() {
     );
 }
 
-export function* onAdminGetAllOrders() {
+export function* onAdminGetAllOrdersStart() {
     yield takeLatest(
         AdminActionTypes.ADMIN_GET_ALL_ORDERS_START,
         AdminGetAllOrders
+    );
+}
+
+export function* onAdminUpdateOrderStatusStart() {
+    yield takeLatest(
+        AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_START,
+        AdminUpdateOrderStatus
     );
 }
 
@@ -59,7 +81,8 @@ export function* onAdminGetAllOrders() {
 export function* adminSagas() {
     yield all([
         call(onAdminGetUser),
-        call(onAdminGetAllOrders),
+        call(onAdminGetAllOrdersStart),
+        call(onAdminUpdateOrderStatusStart),
     ]);
 }
 

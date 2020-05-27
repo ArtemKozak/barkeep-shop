@@ -37,3 +37,17 @@ export const AdminGetOrdersFailure = error => ({
     type: AdminActionTypes.ADMIN_GET_ALL_USERS_FAILURE,
     payload: error
 });
+
+export const AdminUpdateOrderStatusStart = orderId => ({
+    type: AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_START,
+    payload: orderId
+})
+
+export const AdminUpdateOrderStatusSuccess = () => ({
+    type: AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_SUCCESS,
+});
+
+export const AdminUpdateOrderStatusFailure = error => ({
+    type: AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_FAILURE,
+    payload: error
+});

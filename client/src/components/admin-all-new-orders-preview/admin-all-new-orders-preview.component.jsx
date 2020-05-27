@@ -31,7 +31,7 @@ class AdminAllNewOrdersPreview extends React.Component {
                     this.props.userOrders ? (this.props.userOrders
                             .sort((a, b) => b.createdAt.seconds - a.createdAt.seconds)
                             .map(order => (
-                                <AdminNewOrders key={order.id} orderProps={order}/>
+                                <AdminNewOrders key={order.id} orderId={order.id} orderProps={order}/>
                             ))
                     ) : null
                 }

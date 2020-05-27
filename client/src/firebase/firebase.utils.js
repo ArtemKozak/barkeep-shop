@@ -85,6 +85,13 @@ export const updateUserProfileDocument = async ({userAuth, displayName, email, p
     });
 }
 
+export const updateAdminUserStatusDocument = async ({userId, orderId, orderStatus}) => {
+    const userRef = firestore.doc(`users/${userId}/orders/${orderId}`);
+    await userRef.update({
+        orderStatus
+    });
+}
+
 // export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
 //     const collectionRef = firestore.collection(collectionKey);
 //

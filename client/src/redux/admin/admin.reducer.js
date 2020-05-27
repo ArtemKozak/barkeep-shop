@@ -10,6 +10,7 @@ const adminReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case AdminActionTypes.ADMIN_GET_ALL_ORDERS_START:
         case AdminActionTypes.ADMIN_GET_ALL_USERS_START:
+        case AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_START:
             return {
                 ...state,
                 error: null,
@@ -26,14 +27,14 @@ const adminReducer = (state = INITIAL_STATE, action) => {
                 users: action.payload,
                 error: null,
             };
-        case AdminActionTypes.ADMIN_GET_ALL_ORDERS_FAILURE:
         case AdminActionTypes.ADMIN_GET_ALL_USERS_ORDERS_SUCCESS:
             return {
                 ...state,
-                users: action.payload,
                 error: null,
             };
+        case AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_FAILURE:
         case AdminActionTypes.ADMIN_GET_ALL_USERS_FAILURE:
+        case AdminActionTypes.ADMIN_GET_ALL_ORDERS_FAILURE:
         case AdminActionTypes.ADMIN_GET_ALL_USERS_ORDERS_FAILURE:
             return {
                 ...state,
