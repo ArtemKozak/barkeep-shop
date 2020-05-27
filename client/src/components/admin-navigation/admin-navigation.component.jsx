@@ -7,13 +7,13 @@ const AdminNavigation = () => (
         <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/'>
             Главная
         </NavigationProfileLink>
-        <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/new-orders/'>
+        <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/new-orders'>
             Новые заказы
         </NavigationProfileLink>
-        <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/completed-orders/'>
+        <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/completed-orders'>
             Выполненные заказы
         </NavigationProfileLink>
-        <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/users/'>
+        <NavigationProfileLink to='/administrator_page_for_user_orders_and_other/users'>
             Пользователи
         </NavigationProfileLink>
     </NavigationContainer>

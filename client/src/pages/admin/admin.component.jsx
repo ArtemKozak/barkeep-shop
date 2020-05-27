@@ -7,7 +7,9 @@ import {
 } from './admin.styles';
 import AdminNavigation from "../../components/admin-navigation/admin-navigation.component";
 import {Line} from "../profile/profile.styles";
-import AdminNewOrders from "../../components/admin-new-orders/admin-new-orders.component";
+import AdminAllUsers from "../../components/admin-all-users/admin-all-users.component";
+import AdminAllNewOrdersPreview
+    from "../../components/admin-all-new-orders-preview/admin-all-new-orders-preview.component";
 
 const AdminPage = () => {
     return (
@@ -16,13 +18,13 @@ const AdminPage = () => {
             <Line/>
             <Switch>
                 <Route exact path='/administrator_page_for_user_orders_and_other'
-                       component={AdminNewOrders}/>
-                <Route exact path='/administrator_page_for_user_orders_and_other/new-orders/'
-                       component={AdminNewOrders}/>
+                       component={AdminAllNewOrdersPreview}/>
+                <Route exact path='/administrator_page_for_user_orders_and_other/new-orders'
+                       component={AdminAllNewOrdersPreview}/>
                 <Route exact path='/administrator_page_for_user_orders_and_other/completed-orders'
-                       component={AdminNewOrders}/>
+                       component={AdminAllNewOrdersPreview}/>
                 <Route exact path='/administrator_page_for_user_orders_and_other/users'
-                       component={AdminNewOrders}/>
+                       component={AdminAllUsers}/>
             </Switch>
             <Line/>
         </AdminPageContainer>

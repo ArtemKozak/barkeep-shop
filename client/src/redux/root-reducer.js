@@ -9,6 +9,7 @@ import shopReducer from './shop/shop.reducer';
 import sidebarReducer from "./sidebar/sidebar.reducer";
 import profileReducer from "./profile/profile.reducer";
 import ordersReducer from "./orders/orders.reducer";
+import adminReducer from "./admin/admin.reducer";
 
 
 const persistConfig = {
@@ -20,6 +21,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
     user: userReducer,
     cart: cartReducer,
+    admin: adminReducer,
     orders: ordersReducer,
     directory: directoryReducer,
     shop: shopReducer,

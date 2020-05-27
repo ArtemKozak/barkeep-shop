@@ -20,23 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/admin-navigation/admin-navigation.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/admin-navigation/admin-navigation.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/checkout-fixed-item/checkout-fixed-item.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/checkout-fixed-item/checkout-fixed-item.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-all-new-orders-preview/admin-all-new-orders-preview.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-all-new-orders-preview/admin-all-new-orders-preview.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-all-users/admin-all-users.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-all-users/admin-all-users.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-user-item/admin-user-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-user-item/admin-user-item.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.sagas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/custom-button/custom-button.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/admin-navigation/admin-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-navigation/admin-navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-new-orders/admin-new-orders.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-navigation/profile-navigation.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/root-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/root-saga.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +167,7 @@
       <workItem from="1587152864416" duration="2102000" />
       <workItem from="1587159361266" duration="4489000" />
       <workItem from="1590105604490" duration="19570000" />
-      <workItem from="1590188855141" duration="85212000" />
-    </task>
-    <task id="LOCAL-00031" summary="fixing server dev">
-      <created>1586286262783</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1586286262783</updated>
+      <workItem from="1590188855141" duration="122066000" />
     </task>
     <task id="LOCAL-00032" summary="fixing server dev">
       <created>1586286338251</created>
@@ -507,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590426064858</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="added order admin page">
+      <created>1590454269092</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1590454269093</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +583,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new props for button" />
     <MESSAGE value="added new mobile menu" />
     <MESSAGE value="mobile menu styled in jsx" />
     <MESSAGE value="changed mobile menu flex direction to column" />
@@ -603,7 +607,8 @@
     <MESSAGE value="displaying orders history from firebase" />
     <MESSAGE value="fixed orders history, added mobile view" />
     <MESSAGE value="added order description dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="added order description dropdown" />
+    <MESSAGE value="added order admin page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added order admin page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -618,11 +623,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590426064670">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590454268869">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590426064670" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590454268869" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -660,11 +665,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590350554450">
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590454271229">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590350554450" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590454271229" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

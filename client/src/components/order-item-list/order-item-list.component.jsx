@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {createStructuredSelector} from "reselect";
 import {connect} from "react-redux";
 
@@ -18,10 +18,8 @@ import {
     StatusText,
     Array,
     OrderPreview,
-    OrderPreviewItem,
     OrderItemContainer,
 } from './order-item-list.styles'
-import CheckoutItem from "../checkout-item/checkout-item.component";
 
 const options = {
     weekday: 'short',
@@ -97,9 +95,6 @@ const OrderItemList = ({orderId, cartItems, createdAt, orderStatus, total, setOr
             <OrderPreview className={orderIsOpen === orderId ? 'opened' : ''}>
                 {cartItems.map((cartItem) =>
                     <OrderFixedItem key={cartItem.id} cartItem={cartItem}/>
-                    // <OrderPreviewItem key={id}>
-                    //     <p>{name} - {quantity} шт. по {price} грн</p>
-                    // </OrderPreviewItem>
                 )}
             </OrderPreview>
         </OrderItemListContainer>)

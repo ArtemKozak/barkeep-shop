@@ -130,9 +130,71 @@ export const convertUserOrdersSnapshotToMap = userOrders => {
             total,
         };
     });
-
     return transformedUserOrders.reduce((accumulator, userOrder) => {
         accumulator[userOrder.id] = userOrder;
+        return accumulator;
+    }, {});
+};
+
+export const convertUsersSnapshotToMap = users => {
+    const transformedUsers = users.docs.map(doc => {
+        const {
+            uid,
+            displayName,
+            photoURL,
+            email,
+            emailVerified,
+            phoneNumber,
+            isAnonymous,
+            createdAt,
+            address,
+            loyaltyPoints,
+        } = doc.data();
+
+        return {
+            uid,
+            displayName,
+            photoURL,
+            email,
+            emailVerified,
+            phoneNumber,
+            isAnonymous,
+            createdAt,
+            address,
+            loyaltyPoints,
+        };
+    });
+
+    return transformedUsers.reduce((accumulator, users) => {
+        accumulator[users.uid] = users;
+        return accumulator;
+    }, {});
+};
+
+
+export const convertAdminUsersOrdersSnapshotToMap = orders => {
+    const transformedOrders = orders.docs.map(doc => {
+        const {
+            cartItems,
+            currentUser,
+            orderStatus,
+            total,
+            createdAt,
+        } = doc.data();
+        const id = doc.id;
+
+        return {
+            cartItems,
+            currentUser,
+            orderStatus,
+            total,
+            createdAt,
+            id
+        };
+    });
+
+    return transformedOrders.reduce((accumulator, orders) => {
+        accumulator[orders.id] = orders;
         return accumulator;
     }, {});
 };
@@ -145,6 +207,18 @@ export const getCurrentUser = () => {
         }, reject);
     });
 };
+
+// export const getOrdersCollections = () => {
+//     const orders = firebase.firestore().collectionGroup('orders')
+//     orders.get().then(function (querySnapshot) {
+//         querySnapshot.forEach(function (doc) {
+//             console.log(doc.id, ' => ', doc.data());
+//         });
+//     });
+// }
+
+
+// (currentUser.id === 'JOZY7zzZx9fsgna5BBGWuIIJHzi2')
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();

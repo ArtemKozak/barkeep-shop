@@ -72,7 +72,7 @@ export const MenuItem = styled.ul`
   list-style-type: none;
   position: fixed;
   width: 100vw;
-  height: 110vh;
+  height: 120vh;
   margin: -50px 0 0 -50vw;
   padding: 15vh 30px 50px;
   background-color: black;

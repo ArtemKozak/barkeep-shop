@@ -40,7 +40,7 @@ class App extends React.Component {
                 <MobileHeader/>
                 <Switch>
                     <Route exact path='/' component={HomePage}/>
-                    <Route exact path='/administrator_page_for_user_orders_and_other' render={() =>
+                    <Route path='/administrator_page_for_user_orders_and_other' render={() =>
                         this.props.currentUser && this.props.currentUser.uid === 'JOZY7zzZx9fsgna5BBGWuIIJHzi2' ? (
                             <AdminPage/>
                         ) : (
