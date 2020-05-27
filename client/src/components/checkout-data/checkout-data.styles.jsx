@@ -18,7 +18,7 @@ export const CheckoutData = styled.div`
 `;
 
 export const ItemsBlock = styled.div`
-  width: 35%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   
@@ -49,7 +49,7 @@ export const ItemsGroup = styled.div`
 `;
 
 export const UserDataBlock = styled.div`
-  width: 65%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   

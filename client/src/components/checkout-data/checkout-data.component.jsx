@@ -50,65 +50,54 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, itemsCount, userUpdat
 
     return (
         <CheckoutDataContainer>
-            <CheckoutData>
-                <UserDataBlock>
-                    <CheckoutUserTitle>
-                        Контактные данные
-                    </CheckoutUserTitle>
-                    <CheckoutContactData>
-                        <CheckoutFormContainer>
-                            <FormInputForData
-                                name='displayName'
-                                type='text'
-                                handleChange={handleChange}
-                                value={displayName}
-                                label='Имя и фамилия'
-                                required
-                            />
-                            <FormInputForData
-                                name='email'
-                                type='email'
-                                handleChange={handleChange}
-                                value={email}
-                                label='Электронная почта'
-                                disabled
-                            />
-                            <FormInputForData
-                                name='phoneNumber'
-                                type='tel'
-                                handleChange={handleChange}
-                                value={phoneNumber}
-                                label='Телефон'
-                                required
-                            />
-                            <FormInputForData
-                                name='address'
-                                type='text'
-                                handleChange={handleChange}
-                                value={address}
-                                label='Адрес получателя'
-                                required
-                            />
-                            <CustomButton onClick={handleSubmit}>Заказ подтверждаю</CustomButton>
-                        </CheckoutFormContainer>
-                    </CheckoutContactData>
-                </UserDataBlock>
-                <ItemsBlock>
-                    <ItemsGroup>
-                        {cartItems.map(cartItem => (
-                            <CheckoutItem key={cartItem.id} cartItem={cartItem}/>
-                        ))}
-                    </ItemsGroup>
-                    <TotalContainer>Всего: {total} грн</TotalContainer>
-                </ItemsBlock>
-            </CheckoutData>
+            <UserDataBlock>
+                <CheckoutUserTitle>
+                    Контактные данные
+                </CheckoutUserTitle>
+                <CheckoutContactData>
+                    <CheckoutFormContainer>
+                        <FormInputForData
+                            name='displayName'
+                            type='text'
+                            handleChange={handleChange}
+                            value={displayName}
+                            label='Имя и фамилия'
+                            required
+                        />
+                        <FormInputForData
+                            name='email'
+                            type='email'
+                            handleChange={handleChange}
+                            value={email}
+                            label='Электронная почта'
+                            disabled
+                        />
+                        <FormInputForData
+                            name='phoneNumber'
+                            type='tel'
+                            handleChange={handleChange}
+                            value={phoneNumber}
+                            label='Телефон'
+                            required
+                        />
+                        <FormInputForData
+                            name='address'
+                            type='text'
+                            handleChange={handleChange}
+                            value={address}
+                            label='Адрес получателя'
+                            required
+                        />
+                        <CustomButton onClick={handleSubmit}>Заказ подтверждаю</CustomButton>
+                    </CheckoutFormContainer>
+                </CheckoutContactData>
+            </UserDataBlock>
         </CheckoutDataContainer>
     )
 };
 
 const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems,
-    total: selectCartTotal,
     currentUser: selectCurrentUser,
     itemsCount: selectCartItemsCount
 });

@@ -38,7 +38,7 @@ export const BottomLevelContainer = styled.div`
 `;
 
 export const CheckoutItemContainer = styled.div`
-  width: 370px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100px;
