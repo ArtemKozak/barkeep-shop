@@ -54,7 +54,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 export const createUserOrderDocument = async (orderData) => {
     if (!orderData) return;
 
-    console.log(orderData)
     const orderRef = firestore.collection(`users/${orderData.orderUserData.uid}/orders`);
 
     const currentUser = orderData.orderUserData;

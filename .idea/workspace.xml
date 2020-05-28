@@ -22,9 +22,8 @@
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-fixed-item/checkout-fixed-item.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-fixed-item/checkout-fixed-item.styles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout/checkout.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.sagas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +156,8 @@
       <workItem from="1590572285339" duration="4855000" />
       <workItem from="1590588771683" duration="666000" />
       <workItem from="1590593804277" duration="292000" />
-      <workItem from="1590618130754" duration="1376000" />
-    </task>
-    <task id="LOCAL-00034" summary="added mobile view styles">
-      <created>1586298267824</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1586298267824</updated>
+      <workItem from="1590618130754" duration="2088000" />
+      <workItem from="1590673271414" duration="2365000" />
     </task>
     <task id="LOCAL-00035" summary="mobile view improved">
       <created>1586308859733</created>
@@ -502,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590583388172</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="fixing mobile view and cart for not logged in users">
+      <created>1590619866699</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1590619866700</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +573,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed mobile menu flex direction to column" />
     <MESSAGE value="fixed mobile view" />
     <MESSAGE value="add mobile Dark Mode" />
     <MESSAGE value="changed HorizontalLite to Line at the profile page" />
@@ -598,7 +597,8 @@
     <MESSAGE value="added order admin page" />
     <MESSAGE value="admin can get all users and all orders" />
     <MESSAGE value="admin can change order status" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin can change order status" />
+    <MESSAGE value="fixing mobile view and cart for not logged in users" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing mobile view and cart for not logged in users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -613,11 +613,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590583387941">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590619866457">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590583387941" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590619866457" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -656,11 +656,11 @@
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
     <state x="314" y="139" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1590580998264" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590583390527">
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590619869040">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590583390527" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590619869040" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

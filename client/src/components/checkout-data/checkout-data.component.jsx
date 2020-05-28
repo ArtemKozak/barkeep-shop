@@ -14,7 +14,6 @@ import {
 } from './checkout-data.styles';
 
 import FormInputForData from "../form-input-for-data/form-input-for-data.component";
-import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import CustomButton from "../custom-button/custom-button.component";
 
 import {userUpdateStart} from "../../redux/user/user.actions";
@@ -98,6 +97,7 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, itemsCount, userUpdat
 
 const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems,
+    total: selectCartTotal,
     currentUser: selectCurrentUser,
     itemsCount: selectCartItemsCount
 });

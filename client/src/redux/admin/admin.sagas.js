@@ -34,8 +34,8 @@ export function* adminAllGetUsers() {
 
 export function* AdminGetAllOrders() {
     try {
-        const orders = yield firestore.collectionGroup('orders')
-        const snapShot = yield orders.get();
+        const ordersRef = yield firestore.collectionGroup('orders')
+        const snapShot = yield ordersRef.get();
         const ordersMap = yield call(
             convertAdminUsersOrdersSnapshotToMap,
             snapShot
