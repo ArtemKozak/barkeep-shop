@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.styles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/firebase/firebase.utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.sagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.sagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart-item/cart-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart-item/cart-item.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.types.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +164,7 @@
       <workItem from="1590588771683" duration="666000" />
       <workItem from="1590593804277" duration="292000" />
       <workItem from="1590618130754" duration="2088000" />
-      <workItem from="1590673271414" duration="2365000" />
-    </task>
-    <task id="LOCAL-00035" summary="mobile view improved">
-      <created>1586308859733</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1586308859733</updated>
+      <workItem from="1590673271414" duration="11717000" />
     </task>
     <task id="LOCAL-00036" summary="added mobile view for collections and checkout">
       <created>1586345525694</created>
@@ -502,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590619866700</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="fixed error caused by creating order">
+      <created>1590677376447</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1590677376448</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +580,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed mobile view" />
     <MESSAGE value="add mobile Dark Mode" />
     <MESSAGE value="changed HorizontalLite to Line at the profile page" />
     <MESSAGE value="added sidebarHidden reducer" />
@@ -598,7 +604,8 @@
     <MESSAGE value="admin can get all users and all orders" />
     <MESSAGE value="admin can change order status" />
     <MESSAGE value="fixing mobile view and cart for not logged in users" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing mobile view and cart for not logged in users" />
+    <MESSAGE value="fixed error caused by creating order" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error caused by creating order" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -613,11 +620,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590619866457">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590677376229">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590619866457" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590677376229" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -656,11 +663,11 @@
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
     <state x="314" y="139" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1590580998264" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590619869040">
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590677378526">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590619869040" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590677378526" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
