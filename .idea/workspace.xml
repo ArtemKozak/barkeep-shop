@@ -21,15 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/admin-all-new-orders-preview/admin-all-new-orders-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-all-new-orders-preview/admin-all-new-orders-preview.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/admin-all-users/admin-all-users.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-all-users/admin-all-users.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/stripe-button/stripe-button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/stripe-button/stripe-button.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/admin/admin.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,14 +155,7 @@
       <workItem from="1590588771683" duration="666000" />
       <workItem from="1590593804277" duration="292000" />
       <workItem from="1590618130754" duration="2088000" />
-      <workItem from="1590673271414" duration="23170000" />
-    </task>
-    <task id="LOCAL-00037" summary="added mobile view for cart dropdown">
-      <created>1586348505043</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1586348505043</updated>
+      <workItem from="1590673271414" duration="23803000" />
     </task>
     <task id="LOCAL-00038" summary="added facebook login button">
       <created>1586359146018</created>
@@ -509,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590872131955</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="displaying circle graph in percents">
+      <created>1590886896175</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1590886896175</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +571,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed HorizontalLite to Line at the profile page" />
     <MESSAGE value="added sidebarHidden reducer" />
     <MESSAGE value="fixed mobile sidebar closing" />
     <MESSAGE value="added google analytics" />
@@ -605,7 +595,8 @@
     <MESSAGE value="fixing mobile view and cart for not logged in users" />
     <MESSAGE value="fixed error caused by creating order" />
     <MESSAGE value="displaying graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying graph" />
+    <MESSAGE value="displaying circle graph in percents" />
+    <option name="LAST_COMMIT_MESSAGE" value="displaying circle graph in percents" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -620,11 +611,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590872131752">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590886895970">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590872131752" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590886895970" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -653,6 +644,10 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="356" y="230" key="IDE.errors.dialog/0.0.1536.960@0.0.1536.960" timestamp="1584834387853" />
+    <state x="784" y="434" width="443" height="252" key="MultipleFileMergeDialog" timestamp="1590886942604">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="784" y="434" width="443" height="252" key="MultipleFileMergeDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1590886942604" />
     <state x="630" y="231" key="RollbackChangesDialog" timestamp="1590579649631">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -663,11 +658,11 @@
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
     <state x="314" y="139" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1590580998264" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590677378526">
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590886905561">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590677378526" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590886905561" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>

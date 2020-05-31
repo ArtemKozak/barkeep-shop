@@ -56,12 +56,14 @@ const AdminHome = ({
                                     fill="none"
                                     cx="16.91549431" cy="16.91549431" r="15.91549431"/>
                             <circle className="circle-chart__circle" stroke="#00acc1" strokeWidth="2"
-                                    strokeDasharray={`${percents * 100}, 100`} strokeLinecap="round" fill="none"
+                                    strokeDasharray={`${(percents * 100).toFixed(1)}, 100`} strokeLinecap="round"
+                                    fill="none"
                                     cx="16.91549431"
                                     cy="16.91549431" r="15.91549431"/>
                             <g className="circle-chart__info">
                                 <text className="circle-chart__percent" x="16.91549431" y="15.5"
-                                      alignmentBaseline="central" textAnchor="middle" fontSize="8">{percents * 100}%
+                                      alignmentBaseline="central" textAnchor="middle"
+                                      fontSize="8">{(percents * 100).toFixed(1)}%
                                 </text>
                                 <text className="circle-chart__subline" x="16.91549431" y="20.5"
                                       alignmentBaseline="central" textAnchor="middle" fontSize="2">оформили заказ
@@ -76,12 +78,14 @@ const AdminHome = ({
                                     fill="none"
                                     cx="16.91549431" cy="16.91549431" r="15.91549431"/>
                             <circle className="circle-chart__circle" stroke="#00acc1" strokeWidth="2"
-                                    strokeDasharray={`${percents * 100}, 100`} strokeLinecap="round" fill="none"
+                                    strokeDasharray={`${(percents * 100).toFixed(1)}, 100`} strokeLinecap="round"
+                                    fill="none"
                                     cx="16.91549431"
                                     cy="16.91549431" r="15.91549431"/>
                             <g className="circle-chart__info">
                                 <text className="circle-chart__percent" x="16.91549431" y="15.5"
-                                      alignmentBaseline="central" textAnchor="middle" fontSize="8">{percents * 100}%
+                                      alignmentBaseline="central" textAnchor="middle"
+                                      fontSize="8">{(percents * 100).toFixed(1)}%
                                 </text>
                                 <text className="circle-chart__subline" x="16.91549431" y="20.5"
                                       alignmentBaseline="central" textAnchor="middle" fontSize="2">оформили заказ
@@ -96,12 +100,14 @@ const AdminHome = ({
                                     fill="none"
                                     cx="16.91549431" cy="16.91549431" r="15.91549431"/>
                             <circle className="circle-chart__circle" stroke="#00acc1" strokeWidth="2"
-                                    strokeDasharray={`${percents * 100}, 100`} strokeLinecap="round" fill="none"
+                                    strokeDasharray={`${(percents * 100).toFixed(1)}, 100`} strokeLinecap="round"
+                                    fill="none"
                                     cx="16.91549431"
                                     cy="16.91549431" r="15.91549431"/>
                             <g className="circle-chart__info">
                                 <text className="circle-chart__percent" x="16.91549431" y="15.5"
-                                      alignmentBaseline="central" textAnchor="middle" fontSize="8">{percents * 100}%
+                                      alignmentBaseline="central" textAnchor="middle"
+                                      fontSize="8">{(percents * 100).toFixed(1)}%
                                 </text>
                                 <text className="circle-chart__subline" x="16.91549431" y="20.5"
                                       alignmentBaseline="central" textAnchor="middle" fontSize="2">оформили заказ
