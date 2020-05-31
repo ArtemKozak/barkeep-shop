@@ -1,9 +1,11 @@
 import AdminActionTypes from "./admin.types";
+import {countUsersToOrders} from "./admin.utils";
 
 const INITIAL_STATE = {
     users: null,
     error: null,
     orders: null,
+    usersToOrders: 0
 };
 
 const adminReducer = (state = INITIAL_STATE, action) => {
@@ -27,11 +29,11 @@ const adminReducer = (state = INITIAL_STATE, action) => {
                 users: action.payload,
                 error: null,
             };
-        // case AdminActionTypes.ADMIN_GET_USERS_TO_ORDERS:
-        //     return {
-        //         ...state,
-        //         graphs:
-        //     }
+        case AdminActionTypes.ADMIN_GET_USERS_TO_ORDERS:
+            return {
+                ...state,
+                usersToOrders: countUsersToOrders(action.payload),
+            }
         case AdminActionTypes.ADMIN_GET_ALL_USERS_ORDERS_SUCCESS:
             return {
                 ...state,

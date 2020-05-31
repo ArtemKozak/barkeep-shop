@@ -1,7 +1,9 @@
 export const countUsersToOrders = ({usersKeys, ordersKeys}) => {
-    const existingOrders = usersKeys.find(
-        user => user === ordersKeys[0]
-    );
-    console.log(usersKeys, ordersKeys)
-    return existingOrders;
+    const UsersToOrders = usersKeys.map(user =>
+        ordersKeys.find(
+            order => order === user
+        )
+    )
+    const usersWithOrders = UsersToOrders.filter(usersOrder => usersOrder !== undefined);
+    return (usersWithOrders.length / usersKeys.length).toFixed(3);
 };

@@ -32,3 +32,8 @@ export const selectUsersKeys = createSelector(
     [selectAllUsers],
     users => users ? Object.keys(users).map(key => users[key].uid) : []
 );
+
+export const selectUsersToOrders = createSelector(
+    [selectAdmin],
+    admin => admin.usersToOrders
+);

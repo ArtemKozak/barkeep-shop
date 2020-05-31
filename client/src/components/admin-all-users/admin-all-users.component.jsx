@@ -4,7 +4,7 @@ import {createStructuredSelector} from "reselect";
 import {withRouter} from "react-router-dom";
 
 import {selectCurrentUser} from "../../redux/user/user.selectors";
-import {AdminGetUserStart} from "../../redux/admin/admin.actions";
+import {AdminGetUserStart, AdminGetUsersToOrders} from "../../redux/admin/admin.actions";
 
 import {
     AdminAllUsersContainer,
@@ -14,14 +14,17 @@ import {
 } from './admin-all-users.styles';
 
 
-import {selectUsersForPreview} from "../../redux/admin/admin.selectors";
+import {selectOrdersKeys, selectUsersForPreview, selectUsersKeys} from "../../redux/admin/admin.selectors";
 import AdminUserItem from "../admin-user-item/admin-user-item.component";
 
 
 class AdminAllUsers extends React.Component {
     componentDidMount() {
-        const {AdminGetUserStart} = this.props;
-        AdminGetUserStart();
+        const {AdminGetUsersToOrders, usersKeys, ordersKeys} = this.props;
+        const inspect = usersKeys.length !== 0 && ordersKeys.length !== 0;
+        if (inspect) {
+            AdminGetUsersToOrders(usersKeys, ordersKeys);
+        }
     }
 
     render() {
@@ -50,10 +53,13 @@ class AdminAllUsers extends React.Component {
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
     allUsers: selectUsersForPreview,
+    usersKeys: selectUsersKeys,
+    ordersKeys: selectOrdersKeys,
 });
 
 const mapDispatchToProps = dispatch => ({
     AdminGetUserStart: () => dispatch(AdminGetUserStart()),
+    AdminGetUsersToOrders: (usersKeys, ordersKeys) => dispatch(AdminGetUsersToOrders({usersKeys, ordersKeys})),
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AdminAllUsers));

@@ -11,27 +11,51 @@ import AdminAllUsers from "../../components/admin-all-users/admin-all-users.comp
 import AdminAllNewOrdersPreview
     from "../../components/admin-all-new-orders-preview/admin-all-new-orders-preview.component";
 import AdminHome from "../../components/admin-home/admin-home.component";
+import {AdminGetOrdersStart, AdminGetUserStart, AdminGetUsersToOrders} from "../../redux/admin/admin.actions";
+import {selectOrdersKeys, selectUsersKeys} from "../../redux/admin/admin.selectors";
 
-const AdminPage = () => {
-    return (
-        <AdminPageContainer>
-            <AdminNavigation/>
-            <Line/>
-            <Switch>
-                <Route exact path='/administrator_page_for_user_orders_and_other'
-                       component={AdminHome}/>
-                <Route exact path='/administrator_page_for_user_orders_and_other/new-orders'
-                       component={AdminAllNewOrdersPreview}/>
-                <Route exact path='/administrator_page_for_user_orders_and_other/completed-orders'
-                       component={AdminAllNewOrdersPreview}/>
-                <Route exact path='/administrator_page_for_user_orders_and_other/users'
-                       component={AdminAllUsers}/>
-            </Switch>
-            <Line/>
-        </AdminPageContainer>
-    )
-};
+class AdminPage extends React.Component {
+    componentDidMount() {
+        const {AdminGetUserStart, AdminGetOrdersStart, AdminGetUsersToOrders, usersKeys, ordersKeys} = this.props;
+        AdminGetUserStart();
+        AdminGetOrdersStart();
+        const inspect = usersKeys.length !== 0 && ordersKeys.length !== 0;
+        if (inspect) {
+            AdminGetUsersToOrders(usersKeys, ordersKeys);
+        }
+    }
 
-const mapStateToProps = () => ({});
+    render() {
+        return (
+            <AdminPageContainer>
+                <AdminNavigation/>
+                <Line/>
+                <Switch>
+                    <Route exact path='/administrator_page_for_user_orders_and_other'
+                           component={AdminHome}/>
+                    <Route exact path='/administrator_page_for_user_orders_and_other/new-orders'
+                           component={AdminAllNewOrdersPreview}/>
+                    <Route exact path='/administrator_page_for_user_orders_and_other/completed-orders'
+                           component={AdminAllNewOrdersPreview}/>
+                    <Route exact path='/administrator_page_for_user_orders_and_other/users'
+                           component={AdminAllUsers}/>
+                </Switch>
+                <Line/>
+            </AdminPageContainer>
+        )
+    }
+}
 
-export default connect(mapStateToProps)(AdminPage);
+const mapStateToProps = () => ({
+    usersKeys: selectUsersKeys,
+    ordersKeys: selectOrdersKeys,
+
+});
+
+const mapDispatchToProps = dispatch => ({
+    AdminGetUserStart: () => dispatch(AdminGetUserStart()),
+    AdminGetOrdersStart: () => dispatch(AdminGetOrdersStart()),
+    AdminGetUsersToOrders: (usersKeys, ordersKeys) => dispatch(AdminGetUsersToOrders({usersKeys, ordersKeys})),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(AdminPage);

@@ -51,3 +51,7 @@ export const AdminUpdateOrderStatusFailure = error => ({
     type: AdminActionTypes.ADMIN_UPDATE_ORDER_STATUS_FAILURE,
     payload: error
 });
+export const AdminGetUsersToOrders = data => ({
+    type: AdminActionTypes.ADMIN_GET_USERS_TO_ORDERS,
+    payload: data,
+});

@@ -4,9 +4,9 @@ import {createStructuredSelector} from "reselect";
 
 import {} from './admin-all-new-orders-preview.styles';
 import {AdminNewOrdersContainer, TitleContainer} from "../admin-new-orders/admin-new-orders.styles";
-import {selectOrdersForPreview} from "../../redux/admin/admin.selectors";
+import {selectOrdersForPreview, selectOrdersKeys, selectUsersKeys} from "../../redux/admin/admin.selectors";
 import AdminNewOrders from "../admin-new-orders/admin-new-orders.component";
-import {AdminGetOrdersStart} from "../../redux/admin/admin.actions";
+import {AdminGetOrdersStart, AdminGetUsersToOrders} from "../../redux/admin/admin.actions";
 
 import {
     AdminCustomButtonContainer,
@@ -15,8 +15,11 @@ import {
 
 class AdminAllNewOrdersPreview extends React.Component {
     componentDidMount() {
-        const {AdminGetOrdersStart} = this.props;
-        AdminGetOrdersStart();
+        const {AdminGetUsersToOrders, usersKeys, ordersKeys} = this.props;
+        const inspect = usersKeys.length !== 0 && ordersKeys.length !== 0;
+        if (inspect) {
+            AdminGetUsersToOrders(usersKeys, ordersKeys);
+        }
     }
 
     render() {
@@ -43,11 +46,14 @@ class AdminAllNewOrdersPreview extends React.Component {
 
 
 const mapStateToProps = createStructuredSelector({
-    userOrders: selectOrdersForPreview
+    userOrders: selectOrdersForPreview,
+    usersKeys: selectUsersKeys,
+    ordersKeys: selectOrdersKeys,
 });
 
 const mapDispatchToProps = dispatch => ({
-    AdminGetOrdersStart: () => dispatch(AdminGetOrdersStart())
+    AdminGetOrdersStart: () => dispatch(AdminGetOrdersStart()),
+    AdminGetUsersToOrders: (usersKeys, ordersKeys) => dispatch(AdminGetUsersToOrders({usersKeys, ordersKeys})),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(AdminAllNewOrdersPreview);
