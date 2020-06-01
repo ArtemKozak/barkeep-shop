@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/admin/admin.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/admin/admin.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,14 +155,7 @@
       <workItem from="1590588771683" duration="666000" />
       <workItem from="1590593804277" duration="292000" />
       <workItem from="1590618130754" duration="2088000" />
-      <workItem from="1590673271414" duration="23803000" />
-    </task>
-    <task id="LOCAL-00038" summary="added facebook login button">
-      <created>1586359146018</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1586359146018</updated>
+      <workItem from="1590673271414" duration="24487000" />
     </task>
     <task id="LOCAL-00039" summary="added terms of use">
       <created>1586362511448</created>
@@ -500,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590886896175</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="fixing percents displaying in diagram">
+      <created>1590964214074</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1590964214074</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +571,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added sidebarHidden reducer" />
     <MESSAGE value="fixed mobile sidebar closing" />
     <MESSAGE value="added google analytics" />
     <MESSAGE value="fixed personal information displaying when it equals 'null'" />
@@ -596,7 +595,8 @@
     <MESSAGE value="fixed error caused by creating order" />
     <MESSAGE value="displaying graph" />
     <MESSAGE value="displaying circle graph in percents" />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying circle graph in percents" />
+    <MESSAGE value="fixing percents displaying in diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing percents displaying in diagram" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -611,10 +611,11 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1590886895970">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="390" y="103" key="CommitChangelistDialog2" timestamp="1590964213850">
+      <screen x="0" y="0" width="1792" height="1045" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
+    <state x="390" y="103" key="CommitChangelistDialog2/0.0.1792.1045@0.0.1792.1045" timestamp="1590964213850" />
     <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1590886895970" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
@@ -658,10 +659,11 @@
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
     <state x="314" y="139" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1590580998264" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1590886905561">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="429" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590964218877">
+      <screen x="0" y="0" width="1792" height="1045" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
+    <state x="429" y="227" key="Vcs.Push.Dialog.v2/0.0.1792.1045@0.0.1792.1045" timestamp="1590964218877" />
     <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590886905561" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
