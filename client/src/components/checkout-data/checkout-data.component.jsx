@@ -3,13 +3,9 @@ import {createStructuredSelector} from "reselect";
 
 import {
     CheckoutDataContainer,
-    TotalContainer,
-    CheckoutData,
     CheckoutUserTitle,
     CheckoutContactData,
-    ItemsBlock,
     CheckoutFormContainer,
-    ItemsGroup,
     UserDataBlock
 } from './checkout-data.styles';
 
@@ -38,7 +34,7 @@ const CheckoutDataBlock = ({cartItems, total, currentUser, itemsCount, userUpdat
         event.preventDefault();
         userUpdateStart(displayName, email, phoneNumber, address);
         const orderUserData = {uid, displayName, email, phoneNumber, address};
-        createNewOrderStart(orderUserData, cartItems, total, itemsCount);
+        createNewOrderStart(orderUserData, cartItems, total);
     };
 
     const handleChange = event => {

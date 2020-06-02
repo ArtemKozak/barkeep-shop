@@ -26,7 +26,7 @@ class OrdersHistory extends React.Component {
             <PersonalInformationContainer>
                 <TitleContainer>История Ваших заказов</TitleContainer>
                 {
-                    this.props.userOrders ? (
+                    this.props.userOrders?.length ? (
                         this.props.userOrders
                             .sort((a, b) => b.createdAt.seconds - a.createdAt.seconds)
                             .map(({id, ...otherOrderProps}) => (

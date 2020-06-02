@@ -33,6 +33,9 @@ export const createNewOrderFailure = error => ({
     payload: error
 });
 
+export const createNewOrderSuccessAccepted = () => ({
+    type: CartActionTypes.CREATE_NEW_ORDER_SUCCESS_ACCEPTED,
+});
 
 export const clearCart = () => ({
     type: CartActionTypes.CLEAR_CART

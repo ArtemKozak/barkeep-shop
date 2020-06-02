@@ -3,9 +3,10 @@ import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
-import {selectCartHidden} from '../../redux/cart/cart.selectors';
+import {selectCartHidden, selectSuccessfulOrder} from '../../redux/cart/cart.selectors';
 import {selectCurrentUser} from '../../redux/user/user.selectors';
 import {signOutStart} from '../../redux/user/user.actions';
+import CheckoutSuccess from "../alert-container/alert-container.component";
 
 import {ReactComponent as Logo} from '../../assets/crown.svg';
 
@@ -21,7 +22,7 @@ import {
     MenubarItemDropdown
 } from './header.styles';
 
-const Header = ({currentUser, hidden, signOutStart}) => (
+const Header = ({currentUser, hidden, signOutStart, successOrder}) => (
     <HeaderContainer>
         <LogoContainer to='/'>
             <Logo className='logo'/>
@@ -53,17 +54,20 @@ const Header = ({currentUser, hidden, signOutStart}) => (
             </OptionsTextContainer>
             <CartIcon/>
         </OptionsContainer>
+        {successOrder ? (<CheckoutSuccess/>) : null}
         {hidden ? null : <CartDropdown/>}
     </HeaderContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
-    hidden: selectCartHidden
+    hidden: selectCartHidden,
+    successOrder: selectSuccessfulOrder
 });
 
 const mapDispatchToProps = dispatch => ({
-    signOutStart: () => dispatch(signOutStart())
+    signOutStart: () => dispatch(signOutStart()),
+
 });
 
 export default connect(

@@ -4,7 +4,8 @@ import {addItemToCart, removeItemFromCart} from './cart.utils';
 const INITIAL_STATE = {
     hidden: true,
     cartItems: [],
-    error: null
+    error: null,
+    successfulOrder: undefined,
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -44,7 +45,13 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         case CartActionTypes.CREATE_NEW_ORDER_SUCCESS:
             return {
                 ...state,
+                successfulOrder: true,
                 error: null
+            }
+        case CartActionTypes.CREATE_NEW_ORDER_SUCCESS_ACCEPTED:
+            return {
+                ...state,
+                successfulOrder: undefined,
             }
         case CartActionTypes.CREATE_NEW_ORDER_FAILURE:
             return {

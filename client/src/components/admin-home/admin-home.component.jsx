@@ -12,9 +12,7 @@ import './admin-home.styles.css';
 
 import {selectCurrentUser} from "../../redux/user/user.selectors";
 import {
-    selectAllOrders,
     selectOrdersKeys,
-    selectUsersForPreview,
     selectUsersKeys, selectUsersToOrders
 } from "../../redux/admin/admin.selectors";
 import {AdminGetOrdersStart, AdminGetUserStart, AdminGetUsersToOrders} from "../../redux/admin/admin.actions";

@@ -46,7 +46,11 @@ const MobileMenuFixedButton = ({sidebarHidden, currentUser, toggleSidebarHidden,
                     )}
                     <ListItem onClick={toggleSidebarHidden}><OptionLink to="/">Домой</OptionLink></ListItem>
                     <ListItem onClick={toggleSidebarHidden}><OptionLink to="/shop">Магазин</OptionLink></ListItem>
-                    <ListItem onClick={toggleSidebarHidden}><OptionLink to="/checkout">Корзина</OptionLink></ListItem>
+                    {currentUser ? <ListItem onClick={toggleSidebarHidden}><OptionLink
+                        to="/checkout">Корзина</OptionLink></ListItem> : null}
+                    <ListItem onClick={toggleSidebarHidden}>
+                        <OptionLink to="/profile">Профиль</OptionLink>
+                    </ListItem>
                     <ListItem onClick={toggleSidebarHidden}><OptionLink to="/shop">О нас</OptionLink></ListItem>
                     {currentUser ? (
                         <ListItem onClick={toggleSidebarHidden}>
