@@ -11,6 +11,7 @@ import {
     OrderHead,
     ArrayWithDetails,
     TotalPriceContainer,
+    OrderItemListItemsContainer,
     OrderItemListItems,
     OrderStatusContainer,
     DateContainer,
@@ -85,13 +86,15 @@ const OrderItemList = ({orderId, cartItems, createdAt, orderStatus, total, setOr
                     }
                 </OrderStatusContainer>
             </OrderHead>
-            <OrderItemListItems>
-                {cartItems.map(({id, imageUrl}) =>
-                    <OrderItemContainer key={id}>
-                        <ItemImage imageUrl={imageUrl}/>
-                    </OrderItemContainer>
-                )}
-            </OrderItemListItems>
+            <OrderItemListItemsContainer>
+                <OrderItemListItems>
+                    {cartItems.map(({id, imageUrl}) =>
+                        <OrderItemContainer key={id}>
+                            <ItemImage imageUrl={imageUrl}/>
+                        </OrderItemContainer>
+                    )}
+                </OrderItemListItems>
+            </OrderItemListItemsContainer>
             <OrderPreview className={orderIsOpen === orderId ? 'opened' : ''}>
                 {cartItems.map((cartItem) =>
                     <OrderFixedItem key={cartItem.id} cartItem={cartItem}/>

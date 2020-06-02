@@ -133,12 +133,19 @@ export const Array = styled.div`
   }
 `;
 
-export const OrderItemListItems = styled.div`
+export const OrderItemListItemsContainer = styled.div`
   width: 100%;
   padding: 10px;
   display: flex;
+`;
+
+export const OrderItemListItems = styled.div`
+  width: 100%;
+  padding: 0;
+  display: flex;
   flex-direction: row;
   align-items: start;
+  overflow: scroll;
 `;
 
 export const OrderPreview = styled.div`

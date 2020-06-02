@@ -9,6 +9,7 @@ import {
     TextContainer,
     UserDataContainer
 } from './profile-data-container.styles';
+
 import {formatPhoneNumberIntl} from "react-phone-number-input";
 
 const UserData = (props) => (

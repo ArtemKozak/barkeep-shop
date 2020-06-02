@@ -20,23 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e26f6ff-4a36-4e99-a108-32e83051d1b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/alert-container/alert-container.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/alert-container/alert-container.styles.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/footer/footer.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/footer/footer.styles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/admin-home/admin-home.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkout-data/checkout-data.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/header.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-header/mobile-header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-header/mobile-header.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-sidebar/mobile-sidebar.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-orders-history/profile-orders-history.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/cart/cart.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/cart/cart.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/cart/cart.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/cart/cart.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/cart/cart.selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/cart/cart.selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/cart/cart.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/cart/cart.types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mobile-header/mobile-header.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mobile-header/mobile-header.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/order-item-list/order-item-list.styles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-data-container/profile-data-container.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile-personal-information/profile-personal-information.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,14 +162,7 @@
       <workItem from="1590588771683" duration="666000" />
       <workItem from="1590593804277" duration="292000" />
       <workItem from="1590618130754" duration="2088000" />
-      <workItem from="1590673271414" duration="36730000" />
-    </task>
-    <task id="LOCAL-00040" summary="added terms of use before registration">
-      <created>1586363736290</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1586363736290</updated>
+      <workItem from="1590673271414" duration="44959000" />
     </task>
     <task id="LOCAL-00041" summary="added dropdown menu">
       <created>1586393220935</created>
@@ -515,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591025870760</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="message when checkout is successful">
+      <created>1591063421647</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1591063421647</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +578,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added google analytics" />
     <MESSAGE value="fixed personal information displaying when it equals 'null'" />
     <MESSAGE value="nothing important" />
     <MESSAGE value="added main image to homepage" />
@@ -611,7 +602,8 @@
     <MESSAGE value="displaying circle graph in percents" />
     <MESSAGE value="fixing percents displaying in diagram" />
     <MESSAGE value="fixing displaying html body" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing displaying html body" />
+    <MESSAGE value="message when checkout is successful" />
+    <option name="LAST_COMMIT_MESSAGE" value="message when checkout is successful" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="290" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586296334531">
@@ -626,12 +618,12 @@
       <screen x="0" y="0" width="1536" height="960" />
     </state>
     <state x="513" y="343" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.960@0.0.1536.960" timestamp="1584827788769" />
-    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1591025870605">
+    <state x="148" y="95" key="CommitChangelistDialog2" timestamp="1591063421459">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="127" y="81" key="CommitChangelistDialog2/0.0.1536.960@0.0.1536.960" timestamp="1586708828899" />
     <state x="390" y="103" key="CommitChangelistDialog2/0.0.1792.1045@0.0.1792.1045" timestamp="1590964213850" />
-    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1591025870605" />
+    <state x="148" y="95" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1591063421459" />
     <state x="100" y="100" width="1336" height="760" key="DiffContextDialog" timestamp="1586261255902">
       <screen x="0" y="23" width="1536" height="870" />
     </state>
@@ -674,12 +666,16 @@
     </state>
     <state x="269" y="119" key="SettingsEditor/0.0.1536.960@0.0.1536.960" timestamp="1584629504316" />
     <state x="314" y="139" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1590580998264" />
-    <state x="429" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590964218877">
-      <screen x="0" y="0" width="1792" height="1045" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2" timestamp="1591063423379">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="368" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.960@0.0.1536.960" timestamp="1586909222545" />
     <state x="429" y="227" key="Vcs.Push.Dialog.v2/0.0.1792.1045@0.0.1792.1045" timestamp="1590964218877" />
-    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1590886905561" />
+    <state x="429" y="243" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1591063423379" />
+    <state x="684" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591104726985">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="684" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1591104726985" />
     <state x="145" y="206" key="new project wizard" timestamp="1584621500790">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
